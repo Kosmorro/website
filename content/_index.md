@@ -1,5 +1,6 @@
 +++
 title = "Kosmorro - A program to calculate your ephemerides"
+description = "Available on Linux, FreeBSD and Mac"
 template = "index.html"
 
 [extra]

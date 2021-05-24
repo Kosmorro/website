@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:og="http://ogp.me/ns#">
     <head>
         <meta charset="UTF-8">
         <title>{{ section.title }}</title>
@@ -9,6 +9,14 @@
         <link rel="stylesheet" href="/fonts/titillium/index.css" />
         <link rel="stylesheet" href="/base.css" />
         {% block stylesheets %}{% endblock %}
+
+        <meta name="description" content="{{ section.description }}" />
+        <meta property="og:title" content="{{ section.title }}" />
+        <meta property="og:description" content="{{ section.description }}" />
+        <meta property="og:url" content="{{ current_url | safe }}" />
+        <meta property="og:site_name" content="{{ config.title }}" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="{{ config.base_url | safe }}/img/kosmorro-open-graph.jpg" />
     </head>
     <body>
         <div class="container">
