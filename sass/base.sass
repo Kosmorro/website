@@ -1,0 +1,210 @@
+@import "icons"
+
+html, body
+    margin: 0
+    padding: 0
+    height: 100%
+    scrollbar-width: auto
+    scrollbar-color: #ffca66 #222
+
+    > .container
+        position: relative
+        font-family: "Titillium Web", sans-serif
+        background: #050505
+        color: #dedede
+        font-size: 30px
+        margin: 0
+        padding: 0
+        padding-bottom: 200px
+        min-height: 100%
+
+        > .body
+            padding: 0
+
+            h1, h2
+                font-family: Raleway, sans-serif
+                font-weight: normal
+                font-size: 40px
+                text-align: center
+                margin: 0
+                > small
+                    display: block
+
+            small
+                font-size: 60%
+
+            a
+                color: #aaaaff
+                text-decoration: none
+                &:hover
+                    text-decoration: underline
+
+            .button
+                border: 1px solid #111
+                padding: 5px 10px
+                background: white
+                color: black
+                text-decoration: none
+
+            section
+                &.hero
+                    position: relative
+                    left: 0
+                    right: 0
+                    top: 0
+                    height: 80vh
+                    padding-top: 20vh
+                    color: white
+
+            nav
+                background: #dedede
+                cursor: default
+                margin-bottom: 100px
+                > a.logo
+                    vertical-align: middle
+                    display: inline-block
+                    > img
+                        display: block
+                        width: 256px
+                > ul
+                    position: relative
+                    list-style: none
+                    margin: 0
+                    padding: 0
+                    display: inline-block
+                    vertical-align: middle
+                    &.right
+                        position: absolute
+                        right: 10px
+                        top: -15px
+                    > li
+                        display: inline-block
+                        > a
+                            padding: 20px 10px
+                            color: #222
+                            text-decoration: none
+                            &:hover
+                                text-decoration: underline
+                            > img
+                                display: block
+                                height: 50px
+            > article
+                width: 1000px
+                margin: 0 auto
+                padding-bottom: 100px
+
+                > h2
+                    text-align: inherit
+                    border-top: 1px solid #dede
+                    margin-top: 50px
+                    padding-top: 20px
+                    font-size: 1.5em
+
+                > h3
+                    font-size: 1.2em
+
+                code
+                    border: 1px solid #111
+                    border-radius: 5px
+                    padding: 2px 5px
+                    font-size: 0.9em
+                    background: #151515
+
+                table
+                    border: 1px solid #111
+                    border-radius: 5px
+                    border-collapse: collapse
+                    font-size: 0.8em
+                    > thead > tr > th
+                        border: 1px solid #222
+                        background: #151515
+                        padding: 10px
+                    > tbody > tr > td
+                        border: 1px solid #222
+                        padding: 10px 20px
+
+                pre
+                    font-size: 20px
+                    padding: 10px 20px
+                    overflow-x: auto
+
+                    code
+                        border: none
+                        border-radius: 0
+                        padding: 0
+                        font-size: 0.9em
+                        background: none
+
+        > footer
+            position: absolute
+            bottom: 0
+            width: calc(100% - 220px)
+            height: 200px
+            background-color: #dedede
+            background-image: url("../img/svg/kosmorro-icon.svg")
+            background-repeat: no-repeat
+            background-position: calc(100% - 50px) 50px
+            background-size: 130px
+            margin: 0
+            padding: 20px 200px 20px 20px
+            font-size: 16px
+            text-align: center
+            color: #222
+
+            a
+                color: #2200aa
+
+            > ul.social
+                list-style: none
+                &::before
+                    content: "Follow the project:"
+                    display: block
+                > li
+                    display: inline-block
+                    font-size: 64px
+                    margin: 5px
+                    > a
+                        padding: 10px
+                        display: block
+                        width: 60px
+                        svg > path
+                            fill: #222
+
+@media(max-width: 1100px)
+    body > .container > .body > article
+        width: 90%
+
+@media(max-width: 800px)
+    body > .container > footer
+        background-image: none
+        padding: 20px
+        width: calc(100% - 40px)
+        > ul.social > li > a
+                width: 30px
+
+@media(max-width: 500px)
+    body > .container > .body
+        nav
+            height: 85px
+            overflow-y: hidden
+            transition: 250ms height
+            &:hover
+                height: 250px
+            &::after
+                content: '≡'
+                color: #555
+                position: absolute
+                top: 25px;
+                right: 20px;
+                font-size: 40px;
+            > ul
+                display: block
+                text-align: center
+                margin-top: 25px
+                > li
+                    display: block
+                &.right
+                    position: static
+                    margin-top: 10px
+                    > li
+                        display: inline-block

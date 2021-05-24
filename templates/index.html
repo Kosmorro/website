@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="/kosmorro-landing.css" />
+{% endblock %}
+
+{% block body %}
+
+    <div class="landing">
+        <section class="hero fairyland">
+            <h1>
+                <img src="/img/svg/kosmorro-logo-white.svg" alt="Kosmorro" />
+                <small>A program to calculate your ephemerides</small>
+            </h1>
+
+            <div class="download_button">
+                <a href="/download/cli" class="button">Download</a>
+                <small>Version {{ config.extra.cli_version }} </small>
+            </div>
+        
+
+            <div class="scroll-down-invite">
+                <i class="icon-mouse"></i>
+                <span class="text">Scroll down</span>
+            </div>
+        </section>
+        <nav>
+            {% include 'nav.html' %}
+        </nav>
+        {{ section.content | safe }}
+    </div>
+
+
+{% endblock %}
