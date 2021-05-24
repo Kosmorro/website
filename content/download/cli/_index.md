@@ -1,5 +1,5 @@
 +++
-title = "Kosmorro - A program to calculates your ephemerides"
+title = "Download Kosmorro"
 template = "base.html"
 +++
 
