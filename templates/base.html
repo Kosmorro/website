@@ -2,7 +2,7 @@
 <html xmlns:og="http://ogp.me/ns#">
     <head>
         <meta charset="UTF-8">
-        <title>{{ section.title }}</title>
+        <title>{% block title %}{% endblock %}</title>
         <meta name="viewport" content="width=device-width, maximum-scale=1" />
         <link rel="stylesheet" href="/css/normalize.css/normalize.css" />
         <link rel="stylesheet" href="/fonts/raleway/raleway.min.css" />
@@ -10,9 +10,9 @@
         <link rel="stylesheet" href="/base.css" />
         {% block stylesheets %}{% endblock %}
 
-        <meta name="description" content="{{ section.description }}" />
-        <meta property="og:title" content="{{ section.title }}" />
-        <meta property="og:description" content="{{ section.description }}" />
+        <meta name="description" content="{% block description %}{% endblock %}" />
+        <meta property="og:title" content="{% block ogtitle %}{% endblock %}" />
+        <meta property="og:description" content="{% block ogdescription %}{% endblock %}" />
         <meta property="og:url" content="{{ current_url | safe }}" />
         <meta property="og:site_name" content="{{ config.title }}" />
         <meta property="og:type" content="website" />
@@ -21,14 +21,10 @@
     <body>
         <div class="container">
             <div class="body">
-                {% if not section.extra.hide_nav %}
+                {% if page and not page.extra.hide_nav or section and not section.extra.hide_nav %}
                     <nav>{% include 'nav.html' %}</nav>
                 {% endif %}
-                {% block body %}
-                    <article>
-                        {{ section.content | safe }}
-                    </article>
-                {% endblock %}
+                {% block body %}{% endblock %}
             </div>
 
             <footer>

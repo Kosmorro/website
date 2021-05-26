@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ page.title }}{% endblock %}
+{% block ogtitle %}{{ page.title }}{% endblock %}
+{% block description %}{{ page.description }}{% endblock %}
+{% block ogdescription %}{{ page.description }}{% endblock %}
+
+{% block body %}
+
+<article>
+{{ page.content | safe }}
+</article>
+                
+{% endblock %}

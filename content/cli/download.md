@@ -1,7 +1,6 @@
 +++
 title = "Download Kosmorro"
 description = "All the instructions to install Kosmorro, depending on your platform!"
-template = "base.html"
 +++
 
 # Download Kosmorro

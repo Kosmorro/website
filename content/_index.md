@@ -58,5 +58,5 @@ hide_nav = true
 
 <section class="download">
     <h2>Download Kosmorro now</h2>
-    <p>Kosmorro is a free software, available on Linux, FreeBSD and Mac. <a href="/download/cli">Give it a try!</a></p>
+    <p>Kosmorro is a free software, available on Linux, FreeBSD and Mac. <a href="/cli/download">Give it a try!</a></p>
 </section>
