@@ -4,7 +4,7 @@ default_language = "en"
 base_url = "https://kosmorro.space"
 
 compile_sass = true
-minify_html = true
+minify_html = false
 
 external_links_target_blank = true
 external_links_no_follow = true
