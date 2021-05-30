@@ -34,7 +34,7 @@ pip3 install kosmorro
 
 ## FreeBSD
 
-Kosmorro is available in [your official repositoried](https://www.freshports.org/astro/kosmorro)! You can install it directly with your package manager:
+Kosmorro is available in [your official repositories](https://www.freshports.org/astro/kosmorro)! You can install it directly with your package manager:
 
 ```bash
 pkg install kosmorro
