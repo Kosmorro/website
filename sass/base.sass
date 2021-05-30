@@ -62,6 +62,7 @@ html, body
                 background: #dedede
                 cursor: default
                 margin-bottom: 100px
+                z-index: 1000
                 > a.logo
                     vertical-align: middle
                     display: inline-block
@@ -90,10 +91,40 @@ html, body
                             > img
                                 display: block
                                 height: 50px
+
+            > .toc
+                position: fixed
+                top: 55px
+                left: 0
+                bottom: 0
+                width: 250px
+                background: #223377
+                z-index: 500
+                margin: 0
+                padding: 20px
+                padding-top: 50px
+                font-size: 0.8em
+                overflow-y: auto
+                list-style: none
+                > li
+                    > ul
+                        font-size: 0.8em
+                        border-left: 1px dotted #aaaaff
+                        list-style: none
+                        padding: 0
+                        margin: 0
+                        margin-left: 10px
+                        margin-bottom: 10px
+                        padding-top: 5px
+                        padding-left: 10px
+                        padding-bottom: 5px
+
             > article
                 width: 1000px
                 margin: 0 auto
                 padding-bottom: 100px
+                &.with-toc
+                    padding-left: 300px
 
                 > h2
                     text-align: inherit
@@ -139,6 +170,7 @@ html, body
 
         > footer
             position: absolute
+            z-index: 1000
             bottom: 0
             width: calc(100% - 220px)
             height: 200px
@@ -173,6 +205,14 @@ html, body
                         svg > path
                             fill: #222
 
+@media(max-width: 1350px)
+    body > .container > .body > .toc
+        display: none
+
+    body > .container > .body > article
+        &.with-toc
+            padding-left: 0
+
 @media(max-width: 1100px)
     body > .container > .body > article
         width: 90%
@@ -185,14 +225,14 @@ html, body
         > ul.social > li > a
                 width: 30px
 
-@media(max-width: 500px)
+@media(max-width: 670px)
     body > .container > .body
         nav
             height: 85px
             overflow-y: hidden
             transition: 250ms height
             &:hover
-                height: 250px
+                height: 300px
             &::after
                 content: '≡'
                 color: #555
@@ -206,6 +246,8 @@ html, body
                 margin-top: 25px
                 > li
                     display: block
+                    > a
+                        padding: 0
                 &.right
                     position: static
                     margin-top: 10px
