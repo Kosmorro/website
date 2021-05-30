@@ -16,7 +16,7 @@ build_search_index = false
 highlight_code = true
 
 [extra]
-cli_version = "0.9.0"
+cli_version = "0.10.0"
 lib_version = "0.11.0"
 
 matomo_url = "https://stats.deuchnord.fr/"
