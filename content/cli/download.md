@@ -42,7 +42,7 @@ pkg install kosmorro
 
 ## macOS
 
-macOS currently does not include Python 3 (only Python 2 is provided). The best and simpler method to install it is with [HomeBrew](https://brew/sh). Follow the installation instructions to get it, then install the `python` package from it. Once it is done, use PIP3 to install Kosmorro:
+macOS currently does not include Python 3 (only Python 2 is provided). The best and simpler method to install it is with [HomeBrew](https://brew.sh). Follow the installation instructions to get it, then install the `python` package from it. Once it is done, use PIP3 to install Kosmorro:
 
 ```bash
 brew install python
