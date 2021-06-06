@@ -13,11 +13,13 @@ Kosmorro is currently available on the platforms listed bellow.
 - [Docker image](#docker-image)
 - [Compile from sources](#compile-from-sources)
 
+If you want to generate a PDF file, you might want to look at its [dedicated documentation](@/cli/generate-pdf.md) too.
+
 ## Linux
 
 ### Arch Linux
 
-Kosmorro is available [on the AUR](https://aur.archlinux.org)! To install it, use your favorite AUR helper:
+Kosmorro is available [on the AUR](https://aur.archlinux.org/packages/kosmorro)! To install it, use your favorite AUR helper:
 
 ```bash
 yay kosmorro
