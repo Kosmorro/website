@@ -70,7 +70,7 @@ kosmorrolib.get_moon_phase(datetime.date.fromisoformat("2021-03-27"))
 Get the moon phase for the 27 March, 2021, in the UTC+2 timezone:
 
 ```python
->>> kosmorrolib.get_moon_phase(datetime.date.fromisoformat("2021-03-27"), timezone=2)
+kosmorrolib.get_moon_phase(datetime.date.fromisoformat("2021-03-27"), timezone=2)
 ```
 
 ### Get the ephemerides
