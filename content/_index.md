@@ -26,7 +26,7 @@ hide_nav = true
         It is always frustrating to miss a beautiful event. Kosmorro can find them for you.
     </span>
     <span class="screenshot">
-        <img src="/img/screenshots/terminal/events-detection.png" alt="Kosmorro's basic command" />
+        <img src="/img/screenshots/terminal/events-detection.png" alt="When an event is found, it is displayed in the command returned" />
     </span>
 </div>
 
@@ -39,7 +39,7 @@ hide_nav = true
         Kosmorro has a built-in PDF generator that creates fancy documents in just a few seconds. All you need is TeXLive.
     </span>
     <span class="screenshot">
-        <img src="/img/screenshots/output-pdf.png" alt="Kosmorro's basic command" />
+        <img src="/img/screenshots/output-pdf.png" alt="Example of generated PDF document" />
     </span>
 </div>
 
@@ -52,7 +52,7 @@ hide_nav = true
         <small>* An Internet conection is required just at the first run to download some internal files necessary for the calculations. This will not be necessary anymore in a future release.</small>
     </span>
     <span class="screenshot">
-        <img src="/img/svg/offline.svg" alt="Kosmorro's basic command" style="max-height: 256px" />
+        <img src="/img/svg/offline.svg" alt="" aria-hidden="true" style="max-height: 256px" />
     </span>
 </div>
 
