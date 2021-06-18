@@ -1,4 +1,7 @@
 @import "icons"
+@import "fonts/cantarell"
+@import "fonts/raleway"
+@import "fonts/titillium"
 
 html, body
     margin: 0
@@ -9,7 +12,8 @@ html, body
 
     > .container
         position: relative
-        font-family: "Titillium Web", sans-serif
+        font-family: Cantarell, sans-serif
+        letter-spacing: -1px
         background: #050505
         color: #dedede
         font-size: 30px
@@ -23,12 +27,16 @@ html, body
 
             h1, h2
                 font-family: Raleway, sans-serif
+                letter-spacing: 0
                 font-weight: normal
                 font-size: 40px
                 text-align: center
                 margin: 0
                 > small
                     display: block
+            h3, h4, h5, h6
+                font-family: "Titillium Web", sans-serif
+                font-weight: bold
 
             small
                 font-size: 60%
