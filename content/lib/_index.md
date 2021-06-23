@@ -24,6 +24,16 @@ pip install kosmorrolib
 
 Note that Kosmorrolib follows the [Semantic versionning v2](https://semver.org/spec/v2.0.0.html) specification.
 
+## Update the library
+
+Updating the Kosmorrolib to the latest version is as simple as running the following command:
+
+```bash
+pip update kosmorrolib
+```
+
+Before updating, you may want to check the [changelog](@/lib/changelog.md) to know what changed since the previous version.
+
 ## Usage
 
 Once you have installed Kosmorrolib, just import it in your Python script:
