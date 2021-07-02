@@ -46,6 +46,10 @@ import kosmorrolib
 
 That's it: you're ready to use Kosmorrolib!
 
+> **Important note:** the first time your program will be used, Skyfield (one of Kosmorrolib's dependencies) will download an important file from NASA JPL's servers and store it in a `.kosmorro-cache` folder in the home folder (`$HOME` on UNIX systems).
+> 
+> [This download will not happen anymore](https://github.com/Kosmorro/lib/pull/22) in next version.
+
 ### Get the moon phase
 
 #### Synopsis
