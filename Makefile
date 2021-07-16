@@ -8,6 +8,11 @@ changelog-lib:
 
 changelog: changelog-cli changelog-lib
 
+contribute:
+	python .site-templates/scripts/contribute.py
+
+pages: changelog contribute
+
 serve:
 	zola serve
 
