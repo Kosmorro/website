@@ -52,7 +52,7 @@ hide_nav = true
         <small>* An Internet conection is required just at the first run to download some internal files necessary for the calculations. This will not be necessary anymore in a future release.</small>
     </span>
     <span class="screenshot">
-        <img src="/img/svg/offline.svg" alt="" aria-hidden="true" style="max-height: 256px" />
+        <img src="/img/offline.jpg" alt="" aria-hidden="true" style="max-height: 256px" />
     </span>
 </div>
 
