@@ -17,7 +17,7 @@ highlight_code = true
 
 [extra]
 cli_version = "0.10.1"
-lib_version = "0.11.0"
+lib_version = "0.11.2"
 
 matomo_url = "https://stats.deuchnord.fr/"
 matomo_id = 3
