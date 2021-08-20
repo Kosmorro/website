@@ -258,6 +258,45 @@ html, body
                         font-size: 0.9em
                         background: none
 
+                #version-select
+                    background-color: #333
+                    background-image: url("/img/svg/arrow.svg")
+                    background-repeat: no-repeat
+                    background-position-x: calc(100% - 15px)
+                    background-position-y: 50%
+                    border: #222
+                    padding: 7px 15px
+                    padding-right: 35px
+                    margin: 20px 0
+                    color: #dedede
+                    float: right
+                    font-size: 0.7em
+                    cursor: pointer
+                    border-radius: 5px
+                    -moz-appearance: none
+                    -webkit-appearance: none
+                    -ms-progress-appearance: none
+                    outline-width: 2px
+                    outline-style: solid
+                    outline-offset: 20px
+                    outline-color: transparent
+                    transition: 250ms outline-offset, 250ms outline-color
+                    
+                    &:focus
+                        outline-color: white
+                        outline-offset: 0
+
+                > .alert
+                    &.version
+                        position: sticky
+                        top: 100px
+                        background: #550000
+                        padding: 20px 30px
+                        clear: right
+                        font-size: 0.7em
+                        border-radius: 5px
+                        margin-bottom: -50px
+
         > footer
             position: absolute
             z-index: 1000
@@ -313,38 +352,43 @@ html, body
         width: 90%
 
 @media(max-width: 800px)
-    body > .container > footer
-        background-image: none
-        padding: 20px
-        width: calc(100% - 40px)
-        > ul.social > li > a
-                width: 30px
-
-@media(max-width: 670px)
-    body > .container > .body
-        nav
-            height: 85px
-            overflow-y: hidden
-            transition: 250ms height
-            &:hover
-                height: 300px
-            &::after
-                content: '≡'
-                color: #555
-                position: absolute
-                top: 25px;
-                right: 20px;
-                font-size: 40px;
-            > ul
-                display: block
-                text-align: center
-                margin-top: 25px
-                > li
+    body > .container
+        > .body
+            nav
+                height: 85px
+                overflow-y: hidden
+                transition: 250ms height
+                &:hover
+                    height: 300px
+                &::after
+                    content: '≡'
+                    color: #555
+                    position: absolute
+                    top: 25px;
+                    right: 20px;
+                    font-size: 40px;
+                > ul
                     display: block
-                    > a
-                        padding: 0
-                &.right
-                    position: static
-                    margin-top: 10px
+                    text-align: center
+                    margin-top: 25px
                     > li
-                        display: inline-block
+                        display: block
+                        > a
+                            padding: 0
+                    &.right
+                        position: static
+                        margin-top: 10px
+                        > li
+                            display: inline-block
+            
+            > article
+                > .alert
+                    &.version
+                        position: static
+    
+        > footer
+            background-image: none
+            padding: 20px
+            width: calc(100% - 40px)
+            > ul.social > li > a
+                width: 30px

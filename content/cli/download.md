@@ -84,7 +84,7 @@ Five kinds of tags are available:
 | `unstable` | the current code in the `master` branch, for testing purpose | `kosmorro/kosmorro:unstable`
 | `latest` | the last version (equivalent to not specifying any tag) | `kosmorro/kosmorro:latest`
 | `x` | the last version in the `x` major version | `kosmorro/kosmorro:0` will pull ![last version in the `0` major branch](https://img.shields.io/docker/v/kosmorro/kosmorro/0?style=flat-square)
-| `x.y` | the last version in the `x.y` minor version | `kosmorro/kosmorro:0.10` will pull ![last version in the `0.10` minor branch](https://img.shields.io/docker/v/kosmorro/kosmorro/0.10?style=flat-square)
+| `x.y` | the last version in the `x.y` minor version | `kosmorro/kosmorro:0.10` will pull ![last version in the `0.10` minor branch](https://img.shields.io/docker/v/kosmorro/kosmorro/0.11?style=flat-square)
 | `x.y.z` | the exact specified version | `kosmorro/kosmorro:0.10.0`
 
 </div>

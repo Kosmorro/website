@@ -1,0 +1,44 @@
+{% extends 'section.html' %}
+
+{% block body %}
+    {% set path = section.path|split(pat="/") %}
+    {% set selectedVersion = path[3] %}
+    
+    <article>
+        <h1>
+            <img src="/img/svg/kosmorrolib-logo-white.svg" alt="Kosmorrolib" />
+            <small>Documentation</small>
+        </h1>
+
+        <select id="version-select">
+            {% for version in config.extra.lib_doc_versions %}
+                <option value="{{ version }}"{% if version == selectedVersion %} selected{% endif %}>
+                    v{{ version }}
+                    {% if version == config.extra.lib_doc_current_version %}
+                        (current)
+                    {% elif version == config.extra.lib_doc_next_version %}
+                        (next)
+                    {% endif %}
+                </option>
+            {% endfor %}
+        </select>
+
+        {% if selectedVersion == config.extra.lib_doc_next_version %}
+            <p class="alert version">
+                You are reading the documentation of the version {{ selectedVersion }}, which is not published yet.
+                The information might change at any time, and the features described might be instable and kill your cat.<br />
+                If you are looking for the documentation of the current version, <a href="/lib/doc/current">click here</a>.
+            </p>
+        {% elif selectedVersion != config.extra.lib_doc_current_version %}
+            <p class="alert version">
+                You are reading the documentation of the older version {{ selectedVersion }} of Kosmorrolib.
+                Please consider upgrading to the last version {{ config.extra.lib_doc_current_version }} to profit from the last features.<br />
+                If you are looking for the documentation of the current version, <a href="/lib/doc/current">click here</a>.
+            </p>
+        {% endif %}
+
+        {{ section.content | safe }}
+
+        <script type="text/javascript" src="/scripts/doc/version-selector.js"></script>
+    </article>
+{% endblock body %}
