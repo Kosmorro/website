@@ -47,12 +47,84 @@ html, body
                 &:hover
                     text-decoration: underline
 
+            .center
+                text-align: center
+
             .button
                 border: 1px solid #111
                 padding: 5px 10px
                 background: white
                 color: black
                 text-decoration: none
+                display: inline-block
+
+                &.invite
+                    background: none
+                    border: 1px solid white
+                    color: inherit
+                    border-radius: 30px
+                    margin: 10px
+                    padding: 10px 60px
+                    padding-right: 20px
+                    transition: 250ms
+                    position: relative
+
+                    &:hover
+                        background: white
+                        color: black
+                        text-decoration: none
+
+                        &.gh-logo::before
+                            filter: invert(0%)
+
+                        &.discord-logo::before
+                            filter: invert(0%)
+
+                        &.irc-logo::before
+                            background-color: black
+                            color: white
+
+                    &.gh-logo::before
+                        content: ""
+                        position: absolute
+                        left: 15px
+                        top: 11px
+                        width: 32px
+                        height: 32px
+                        background-image: url("/img/svg/github.svg")
+                        background-repeat: no-repeat
+                        background-size: 32px
+                        filter: invert(100%)
+                        transition: 250ms
+
+                    &.discord-logo::before
+                        content: ""
+                        position: absolute
+                        left: 15px
+                        top: 11px
+                        width: 32px
+                        height: 32px
+                        background-image: url("/img/svg/discord.svg")
+                        background-repeat: no-repeat
+                        background-size: 32px
+                        filter: invert(100%)
+                        transition: 250ms
+
+                    &.irc-logo::before
+                        content: "#"
+                        font-size: 20px
+                        font-style: italic
+                        color: black
+                        background-color: white
+                        border-radius: 20px
+                        position: absolute
+                        left: 15px
+                        top: 12px
+                        width: 32px
+                        height: 32px
+                        line-height: 30px
+                        letter-spacing: 3px
+                        transition: 250ms
 
             section
                 &.hero
