@@ -8,8 +8,13 @@ changelog-lib:
 
 changelog: changelog-cli changelog-lib
 
+lib-doc:
+	python .site-templates/generate-doc.py
+
+pages: changelog
+
 serve:
 	zola serve
 
-build:
+build: pages
 	zola build
