@@ -2,8 +2,6 @@
 title = "Kosmorrolib documentation"
 content = "All the features of Kosmorrolib are documented right here!"
 template = "doc/section.html"
-
-aliases = ['/lib/doc', '/lib/doc/current']
 +++
 
 ## Usage
