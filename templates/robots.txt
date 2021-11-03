@@ -1,4 +1,4 @@
-Sitemap: {{ get_url(path="split_sitemap_index.xml"}}
+Sitemap: {{ get_url(path="sitemap.xml") }}
 
 User-agent: *
 Disallow: /img/*
