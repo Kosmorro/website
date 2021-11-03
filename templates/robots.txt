@@ -1,3 +1,5 @@
+Sitemap: {{ get_url(path="split_sitemap_index.xml"}}
+
 User-agent: *
 Disallow: /img/*
 Disallow: /downloads/*

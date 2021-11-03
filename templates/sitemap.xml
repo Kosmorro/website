@@ -3,9 +3,7 @@
 {% for entry in entries %}
    <url>
       <loc>{{ entry.permalink }}</loc>
-      <lastmod>{{ entry.updated }}</lastmod>
       <changefreq>monthly</changefreq>
-      <priority>1</priority>
    </url>
 {% endfor %}
 </urlset> 
