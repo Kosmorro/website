@@ -9,11 +9,21 @@ changelog-lib:
 changelog: changelog-cli changelog-lib
 
 lib-doc:
-	python .site-templates/generate-doc.py
+	rm -rf content/lib/doc
+	mkdir -p content/lib/doc/current
 
-pages: changelog
+#	 Note: always put last version at the end.
+	@for branch in 0.11 1.0; do \
+		echo "Cloning documentation for Kosmorrlib v$${branch}"; \
+		git clone --branch=$${branch} git@github.com:Kosmorro/libdoc.git content/lib/doc/$${branch}; \
+		mv content/lib/doc/$${branch}/README.md content/lib/doc/$${branch}/_index.md; \
+	done; \
+	echo -e "+++\ntitle = \"Redirecting to version $${branch}...\"\nredirect_to = \"/lib/doc/$${branch}\"\n+++" > content/lib/doc/current/_index.md; \
+	cp content/lib/doc/current/_index.md content/lib/doc/_index.md
 
-serve:
+pages: changelog lib-doc
+
+serve: pages
 	zola serve
 
 build: pages
