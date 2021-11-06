@@ -23,19 +23,7 @@
             {% endfor %}
         </select>
 
-        {% if selectedVersion == config.extra.lib_doc_next_version %}
-            <p class="alert version">
-                You are reading the documentation of the version {{ selectedVersion }}, which is not published yet.
-                The information might change at any time, and the features described might be instable and kill your cat.<br />
-                If you are looking for the documentation of the current version, <a href="/lib/doc/current">click here</a>.
-            </p>
-        {% elif selectedVersion != config.extra.lib_doc_current_version %}
-            <p class="alert version">
-                You are reading the documentation of the older version {{ selectedVersion }} of Kosmorrolib.
-                Please consider upgrading to the last version {{ config.extra.lib_doc_current_version }} to profit from the last features.<br />
-                If you are looking for the documentation of the current version, <a href="/lib/doc/current">click here</a>.
-            </p>
-        {% endif %}
+        {% include 'doc/alert-version.html' %}
 
         {{ section.content | safe }}
 
