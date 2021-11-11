@@ -25,7 +25,7 @@ lib-doc:
 
 pages: changelog lib-doc
 
-serve: pages
+serve:
 	zola serve
 
 build: pages
