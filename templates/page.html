@@ -27,7 +27,7 @@
 {% endif %}
 
 <article{% if page.extra.show_toc %} class="with-toc"{% endif %}>
-{{ page.content| replace(from='{{ lib_version }}', to=config.extra.lib_version) | safe }}
+{{ page.content | safe }}
 </article>
                 
 {% endblock %}

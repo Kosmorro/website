@@ -10,3 +10,5 @@ show_toc = true
 
 This page lists all the changes that have been made on each version of Kosmorro.
 
+Looking for information about how long the versions of Kosmorro are supported? [Check this page](/support/versions#kosmorro).
+
