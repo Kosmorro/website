@@ -1,11 +1,8 @@
-var _paq = window._paq = window._paq || [];
-/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+var matomoTrackingApiUrl = 'https://stats.deuchnord.fr/matomo.php';
+var idSite = 3;
+
+var _paq = window._paq = window._paq || [];  
+_paq.push(['setTrackerUrl', matomoTrackingApiUrl]);
+_paq.push(['setSiteId', idSite]);
 _paq.push(['trackPageView']);
 _paq.push(['enableLinkTracking']);
-(function() {
-    var u="{{ config.extra.matomo_url | safe }}";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '{{ config.extra.matomo_id }}']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-})();

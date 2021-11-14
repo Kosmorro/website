@@ -26,6 +26,3 @@ lib_supported_versions = [
 ]
 cli_version = "0.10.5"
 lib_version = "1.0.1"
-
-matomo_url = "https://stats.deuchnord.fr/"
-matomo_id = 3
