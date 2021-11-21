@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Page not found{% endblock title %}
+{% block description %}Sorry, the page you are looking for does not exist.{% endblock description %}
+
+{% block body %}
+
+<nav>{% include 'nav.html' %}</nav>
+
+<article>
+    <h1>Page not found</h1>
+
+    <p>Sorry, it looks like you have tried to reach a page that does not exist.</p>
+    <p>If you were following a link, then it might be broken. Feel free to report it <a href="https://github.com/Kosmorro/website/issues">on GitHub</a>.</p>
+
+    <h2>These pages might interest you:</h2>
+    <ul>
+        <li><a href="/">Homepage</a></li>
+        <li><a href="/lib">Kosmorrolib</a></li>
+        <li><a href="/lib/doc">Kosmorrolib's documentation</a></li>
+        <li><a href="/support">Get support on Kosmorro</a></li>
+    </ul>
+</article>
+
+{% endblock body %}

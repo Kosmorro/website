@@ -15,7 +15,7 @@
         <meta name="description" content="{% block description %}{% endblock %}" />
         <meta property="og:title" content="{% block ogtitle %}{% endblock %}" />
         <meta property="og:description" content="{% block ogdescription %}{% endblock %}" />
-        <meta property="og:url" content="{{ current_url | safe }}" />
+        {% if current_url %}<meta property="og:url" content="{{ current_url | safe }}" />{% endif %}
         <meta property="og:site_name" content="{{ config.title }}" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="{{ config.base_url | safe }}/img/kosmorro-open-graph.jpg" />
