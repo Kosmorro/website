@@ -20,14 +20,18 @@
 
             <div class="download_button">
                 <a href="/cli/download" class="button">Download</a>
+
+                <small class="system-logos">
+                    <i class="fab fa-apple" title="Available on macOS"></i>
+                    <i class="fab fa-linux" title="Available on GNU/Linux"></i>
+                    <i class="fab fa-freebsd" title="Available on FreeBSD"></i>
+                </small>
+
                 <small>Version {{ config.extra.cli_version }} - <a href="/cli/changelog">Changelog</a></small>
             </div>
         
 
-            <div class="scroll-down-invite">
-                <i class="icon-mouse"></i>
-                <span class="text">Scroll down</span>
-            </div>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
         </section>
         <nav>
             {% include 'nav.html' %}
