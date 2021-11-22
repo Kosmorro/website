@@ -34,7 +34,12 @@ The PDF generator can be used simply by adding the following arguments to any Ko
 For instance, if you want to save a PDF file in `$HOME/Documents/observation_night.pdf` with the computation results for tomorrow in Lille, France, invoke the following command:
 
 ```bash
-kosmorro --date=+1d --latitude=50.5824 --longitude=3.0624 --format=pdf --output=$HOME/Documents/observation_night.pdf
+kosmorro \
+    --date=+1d 
+    --latitude=50.5824 
+    --longitude=3.0624 
+    --format=pdf 
+    --output=$HOME/Documents/observation_night.pdf
 ```
 
 Note that you can optionaly disable the graph generation with the `--no-graph` argument if you don't want it.
@@ -51,7 +56,7 @@ Kosmorro uses the `pdflatex` command to generate the PDF document.
 Check that you have installed TeXLive as explained in this page, and that the `pdflatex` command is in your `$PATH`:
 
 - Try to invoke `which pdflatex`. If you are getting a _not found_ error, it means that TeXLive is not in your `$PATH`. Read your OS distribution's manual to fix this.
-- Try to generate a test PDF from the [dumb LaTeX file](/downloads/dumb-pdf.zip).
+- Try to generate a test PDF from the [dumb LaTeX file](/downloads/dumb-pdf.zip): decompress the ZIP file, open a terminal in the extracted folder and invoke `pdflatex dumb.tex`
 
-If all of this works but you still cannot generate a PDF file, you are most likely facing a bug.
+If the test PDF file is correctly generated, but you still cannot generate a PDF file, you are most likely facing a bug.
 Please consider [opening an issue](https://github.com/Kosmorro/kosmorro/issues/new?assignees=&labels=bug&template=bug_report.md&title=Building+PDF+was+not+possible,+because+some+dependencies+are+not+installed) on GitHub, so we can investigate it.
