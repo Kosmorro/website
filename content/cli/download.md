@@ -15,6 +15,8 @@ Kosmorro is currently available on the platforms listed bellow.
 
 If you want to generate a PDF file, you might want to look at its [dedicated documentation](@/cli/generate-pdf.md) too.
 
+You might also want to [read the manpage](@/cli/manpage.md) to know how to use Kosmorro's command line program.
+
 ## Linux
 
 ### Arch Linux
