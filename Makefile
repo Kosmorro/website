@@ -23,7 +23,17 @@ lib-doc:
 	echo "+++\ntitle = \"Redirecting to version $${branch}...\"\nredirect_to = \"/lib/doc/$${current_version}\"\n+++" > content/lib/doc/current/_index.md; \
 	cp content/lib/doc/current/_index.md content/lib/doc/_index.md
 
-pages: changelog lib-doc
+manpage:
+	cp .site-templates/manpage.md content/cli/manpage.md
+	curl https://raw.githubusercontent.com/Kosmorro/kosmorro/master/manpage/kosmorro.1.md \
+		| tr '\n' '\t' \
+		| sed -e 's/```\tkosmorro/```bash\tkosmorro/g' \
+		| tr '\t' '\n' \
+		| sed -E 's/^# .+//' \
+		| sed -E 's/^`([A-Za-z_=-]+)`/- \0/' \
+		>> content/cli/manpage.md
+
+pages: changelog lib-doc manpage
 
 serve:
 	zola serve

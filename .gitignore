@@ -1,3 +1,4 @@
 /public/*
 /content/*/changelog.md
 /content/lib/doc/*
+/content/cli/manpage.md
