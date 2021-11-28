@@ -2,3 +2,5 @@
 /content/*/changelog.md
 /content/lib/doc/*
 /content/cli/manpage.md
+/static/api/*/*.json
+/templates/jsonld/*/*.html

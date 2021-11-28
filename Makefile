@@ -33,10 +33,14 @@ manpage:
 		| sed -E 's/^`([A-Za-z_=-]+)`/- \0/' \
 		>> content/cli/manpage.md
 
-pages: changelog lib-doc manpage
+generate-jsonlds:
+	python3 .site-templates/scripts/jsonld.py
 
-serve:
+pages: changelog lib-doc manpage
+scripts: generate-jsonlds
+
+serve: scripts
 	zola serve
 
-build: pages
+build:
 	zola build

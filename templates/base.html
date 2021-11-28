@@ -20,6 +20,8 @@
         <meta property="og:site_name" content="{{ config.title }}" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="{{ config.base_url | safe }}/img/kosmorro-open-graph.jpg" />
+
+        {% block jsonld %}{% endblock %}
     </head>
     <body>
         <div class="container">
