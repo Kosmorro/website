@@ -1,5 +1,6 @@
 Sitemap: {{ get_url(path="sitemap.xml") }}
 
 User-agent: *
+Allow: /
 Disallow: /img/*
 Disallow: /downloads/*
