@@ -1,0 +1,20 @@
+{% if section %}
+    {% set path = section.path|split(pat="/") %}
+{% else %}
+    {% set path = page.path|split(pat="/") %}
+{% endif %}
+{% set selectedVersion = path[3] %}
+<select id="version-select">
+    {% for version in config.extra.lib_supported_versions %}
+        {% if version.doc %}
+            <option value="{{ version.number }}"{% if version.number == selectedVersion %} selected{% endif %}>
+                v{{ version.number }}
+                {% if not version.release_date %}
+                    (next)
+                {% endif %}
+            </option>
+        {% endif %}
+    {% endfor %}
+</select>
+
+<script type="text/javascript" src="/scripts/doc/version-selector.js"></script>

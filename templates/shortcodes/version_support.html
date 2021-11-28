@@ -1,16 +1,21 @@
+{% set_global is_last_version = true %}
 {% for version in config.extra.lib_supported_versions %}
-    <div class="version-support{% if version.supported %} supported{% endif %}">
-        <h4>
-            Version {{ version.number }}
-            {% if version.number == config.extra.lib_doc_current_version %}
-                <small class="badge" title="Version {{ version.number }} is the most recent.&#10;Please consider using it in priority.">Recommended</small>
-            {% endif %}
-        </h4>
-        <p>
-            <span class="release-date">Released on {{ version.release_date }}.</span>
-            <span class="support-status">
-                {% if version.supported %}Supported until{% else %}End Of Life since{% endif %} the release of&nbsp;{{ version.killer_version }}.
-            </span>
-        </p>
-    </div>
+    {% if version.release_date %}
+        <div class="version-support{% if version.supported %} supported{% endif %}">
+            <h4>
+                Version {{ version.number }}
+                {% if version.release_date and version.supported and is_last_version %}
+                    {% set_global is_last_version = false %}
+                    <small class="badge" title="Version {{ version.number }} is the most recent.&#10;Use it in priority.">Recommended</small>
+                {% endif %}
+            </h4>
+            <p>
+                <span class="release-date">Released on {{ version.release_date }}.</span>
+                <span class="support-status">
+                    {% if version.supported %}Supported until{% else %}End Of Life since{% endif %} the release of&nbsp;{{ version.killer_version }}.
+                </span>
+            </p>
+        </div>
+        {% if not version.supported %}{% break %}{% endif %}
+    {% endif %}
 {% endfor %}

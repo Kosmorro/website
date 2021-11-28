@@ -1,13 +1,23 @@
-{% if selectedVersion == config.extra.lib_doc_next_version %}
-    <aside class="alert version">
-        <h3>You are reading the documentation of the next version of Kosmorrolib.</h3>
-        <p>The information might change at any time, and the features described here might be unstable, make your app crash, delete the Universe or, worse, kill your cat.</p>
-        <p>If you are looking for the documentation of the current version, <a href="/lib/doc/{{ config.extra.lib_doc_current_version }}">click here</a>.</p>
-    </aside>
-{% elif selectedVersion != config.extra.lib_doc_current_version %}
-    <aside class="alert version">
-        <h3>You are reading the documentation of an old version of Kosmorrolib.</h3>
-        <p>You should consider upgrading to the version {{ config.extra.lib_doc_current_version }} to get profit from the last features.<br /></p>
-        <p>If you are looking for the documentation of the current version, <a href="/lib/doc/{{ config.extra.lib_doc_current_version }}">click here</a>.</p>
-    </aside>
+{% if section %}
+    {% set path = section.path|split(pat="/") %}
+{% else %}
+    {% set path = page.path|split(pat="/") %}
 {% endif %}
+{% set selectedVersion = path[3] %}
+{% for version in config.extra.lib_supported_versions %}
+    {% if selectedVersion == version.number and not version.supported %}
+        {% if version.release_date == false %}
+            <aside class="alert version">
+                <h3>You are reading the documentation of the next version of Kosmorrolib.</h3>
+                <p>The information might change at any time, and the features described here might be unstable, make your app crash, delete the Universe or, worse, kill your cat.</p>
+                <p>If you are looking for the documentation of the current version, <a href="/lib/doc/">click here</a>.</p>
+            </aside>
+        {% else %}
+            <aside class="alert version">
+                <h3>You are reading the documentation of an old version of Kosmorrolib.</h3>
+                <p>You should consider upgrading to the last version to get profit from the last features.<br /></p>
+                <p>If you are looking for the documentation of the current version, <a href="/lib/doc/">click here</a>.</p>
+            </aside>
+        {% endif %}
+    {% endif %}
+{% endfor %}

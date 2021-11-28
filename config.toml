@@ -13,13 +13,12 @@ highlight_code = true
 external_links_target_blank = true
 
 [extra]
-lib_doc_current_version = "1.0"
-lib_doc_next_version = "1.1"
-lib_doc_versions = ["1.1", "1.0", "0.11"]
-lib_supported_versions = [
-    {number = "1.0", release_date = "2021-11-01", supported = true, killer_version = "1.2"},
-    {number = "0.11", release_date = "2021-04-18", supported = true, killer_version = "1.1"},
-    {number = "0.10", release_date = "2021-04-05", supported = false, killer_version = "1.0"}
-]
 cli_version = "0.10.6"
 lib_version = "1.0.1"
+
+lib_supported_versions = [
+    {number = "1.1", release_date = false, supported = false, killer_version = "1.3", doc = true},
+    {number = "1.0", release_date = "2021-11-01", supported = true, killer_version = "1.2", doc = true},
+    {number = "0.11", release_date = "2021-04-18", supported = true, killer_version = "1.1", doc = true},
+    {number = "0.10", release_date = "2021-04-05", supported = false, killer_version = "1.0", doc = false}
+]

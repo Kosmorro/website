@@ -1,8 +1,6 @@
 {% extends 'section.html' %}
 
 {% block body %}
-    {% set path = section.path|split(pat="/") %}
-    {% set selectedVersion = path[3] %}
     
     <article>
         <h1>
@@ -10,25 +8,12 @@
             <small>Documentation</small>
         </h1>
 
-        <select id="version-select">
-            {% for version in config.extra.lib_doc_versions %}
-                <option value="{{ version }}"{% if version == selectedVersion %} selected{% endif %}>
-                    v{{ version }}
-                    {% if version == config.extra.lib_doc_current_version %}
-                        (current)
-                    {% elif version == config.extra.lib_doc_next_version %}
-                        (next)
-                    {% endif %}
-                </option>
-            {% endfor %}
-        </select>
+        {% include 'doc/version-selector.html' %}
 
         {% include 'doc/alert-version.html' %}
 
         {{ section.content | safe }}
 
         <p><small>Help us to improve this page, <a href="https://github.com/Kosmorro/libdoc" target="_blank" rel="noopener">contribute to the documentation</a>!</small></p>
-
-        <script type="text/javascript" src="/scripts/doc/version-selector.js"></script>
     </article>
 {% endblock body %}
