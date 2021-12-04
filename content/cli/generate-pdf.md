@@ -35,10 +35,10 @@ For instance, if you want to save a PDF file in `$HOME/Documents/observation_nig
 
 ```bash
 kosmorro \
-    --date=+1d 
-    --latitude=50.5824 
-    --longitude=3.0624 
-    --format=pdf 
+    --date=+1d \ 
+    --latitude=50.5824 \
+    --longitude=3.0624 \
+    --format=pdf \
     --output=$HOME/Documents/observation_night.pdf
 ```
 
