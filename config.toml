@@ -14,7 +14,7 @@ external_links_target_blank = true
 
 [extra]
 cli_version = "0.10.7"
-lib_version = "1.0.2"
+lib_version = "1.0.4"
 
 lib_supported_versions = [
     {number = "1.1", release_date = false, supported = false, killer_version = "1.3", doc = true},
