@@ -24,7 +24,7 @@ jobs:
       
       - name: Generate pages
         run: |
-          make pages
+          make pages downloads
 
       - name: Build and deploy
         uses: shalzz/zola-deploy-action@v0.14.1

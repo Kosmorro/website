@@ -3,4 +3,5 @@
 /content/lib/doc/*
 /content/cli/manpage.md
 /static/api/*/*.json
+/static/*/download
 /templates/jsonld/*/*.html

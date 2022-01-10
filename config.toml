@@ -13,7 +13,7 @@ highlight_code = true
 external_links_target_blank = true
 
 [extra]
-cli_version = "0.10.7"
+cli_version = "0.10.8"
 lib_version = "1.0.4"
 
 lib_supported_versions = [

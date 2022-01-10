@@ -9,7 +9,7 @@ Kosmorro is currently available on the platforms listed bellow.
 
 - [Linux](#linux)
 - [FreeBSD](#freebsd)
-- [macOS](#macos)
+- [macOS](#macos) (_deprecated_)
 - [Docker image](#docker-image)
 - [Compile from sources](#compile-from-sources)
 
@@ -29,12 +29,22 @@ yay kosmorro
 
 ### Other Linux distributions
 
-First, install Python 3 and its PIP3 package manager. Then, use PIP3 to install Kosmorro. For instance, on Debian, invoke the following commands:
+If you don't use Arch (btw), two options are available for you:
 
-```bash
-apt install python3 python3-pip
-pip3 install kosmorro
-```
+- Download [the AppImage file](/cli/download/kosmorro-latest-x86_64.AppImage), give it the execution rights and run it:
+  ```bash
+  chmod +x kosmorro.AppImage
+  ./kosmorro.AppImage
+  ```
+
+- Otherwise, you can install on your system: install Python 3 and PIP package manager, then use PIP to install Kosmorro.
+
+  For instance, on Debian:
+
+  ```bash
+  sudo apt install python3 python3-pip
+  pip3 install --user kosmorro
+  ```
 
 ## FreeBSD
 
@@ -46,16 +56,19 @@ pkg install kosmorro
 
 ## macOS
 
-macOS currently does not include Python 3 (only Python 2 is provided). The best and simpler method to install it is with [HomeBrew](https://brew.sh). Follow the installation instructions to get it, then install the `python` package from it. Once it is done, use PIP3 to install Kosmorro:
+macOS currently does not include Python 3 (only Python 2 is provided). The best and simplest method to install it is with [HomeBrew](https://brew.sh). Follow the installation instructions to get it, then install the `python` package from it. Once it is done, use PIP3 to install Kosmorro:
 
 ```bash
 brew install python
-pip3 install kosmorro
+pip3 install --user kosmorro
 ```
 
 ## Docker image
 
-Kosmorro is available on Docker Hub! You can get it by running:
+**Important note:** the Docker image is deprecated and won't be updated anymore. It will be removed with version the release of Kosmorro 1.0.
+If you are using it, you should use one of the other installation solution.
+
+You can get Kosmorro by pulling it from official Docker Hub:
 
 ```bash
 docker pull kosmorro/kosmorro
