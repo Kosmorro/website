@@ -33,8 +33,12 @@ If you don't use Arch (btw), two options are available for you:
 
 - Download [the AppImage file](/cli/download/kosmorro-latest-x86_64.AppImage), give it the execution rights and run it:
   ```bash
-  chmod +x kosmorro.AppImage
-  ./kosmorro.AppImage
+  curl -o $HOME/.local/bin/kosmorro.AppImage \
+       https://kosmorro.space/cli/download/kosmorro-latest-x86_64.AppImage
+  chmod +x $HOME/.local/bin/kosmorro.AppImage
+
+  # Run the application:
+  kosmorro.AppImage
   ```
 
 - Otherwise, you can install on your system: install Python 3 and PIP package manager, then use PIP to install Kosmorro.
@@ -44,7 +48,12 @@ If you don't use Arch (btw), two options are available for you:
   ```bash
   sudo apt install python3 python3-pip
   pip3 install --user kosmorro
+
+  # Run the application:
+  kosmorro
   ```
+
+**Note:** if you get a "command not found" error when you try to run the `kosmorro` command, check that the `$HOME/.local/bin` is in your `$PATH`. This folder is a standard place to install applications locally, so this may be useful for many other apps.
 
 ## FreeBSD
 
@@ -52,6 +61,9 @@ Kosmorro is available in [your official repositories](https://www.freshports.org
 
 ```bash
 pkg install kosmorro
+
+# Run the application:
+kosmorro
 ```
 
 ## macOS
@@ -61,7 +73,12 @@ macOS currently does not include Python 3 (only Python 2 is provided). The best 
 ```bash
 brew install python
 pip3 install --user kosmorro
+
+# Run the application:
+kosmorro
 ```
+
+**Note:** if you get a "command not found" error when you try to run the `kosmorro` command, check that the `$HOME/.local/bin` is in your `$PATH`. This folder is a standard place to install applications locally, so this may be useful for many other apps.
 
 ## Docker image
 
