@@ -17,8 +17,8 @@ cli_version = "0.10.9"
 lib_version = "1.0.4"
 
 lib_supported_versions = [
-    {number = "1.1", release_date = false, supported = false, killer_version = "1.3", doc = true},
-    {number = "1.0", release_date = "2021-11-01", supported = true, killer_version = "1.2", doc = true},
-    {number = "0.11", release_date = "2021-04-18", supported = true, killer_version = "1.1", doc = true},
-    {number = "0.10", release_date = "2021-04-05", supported = false, killer_version = "1.0", doc = false}
+    {number = "1.1", release_date = false, eol_date = false, doc = true},
+    {number = "1.0", release_date = "2021-11-01", eol_date = false, doc = true},
+    {number = "0.11", release_date = "2021-04-18", eol_date = false, doc = true},
+    {number = "0.10", release_date = "2021-04-05", eol_date = "2021-11-01", doc = false}
 ]

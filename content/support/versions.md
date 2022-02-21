@@ -17,12 +17,14 @@ If you are not sure of what version of Kosmorro you are running, invoke `kosmorr
 
 ## Kosmorrolib <small class="last_version"><strong>Last version:</strong> {{ lib_version() }}</small> {#kosmorrolib}
 
-For Kosmorrolib, the library that actually makes the calculations, the last patch of the two last minor versions are supported.
-Therefore, once a new minor version of Kosmorrolib is released, you have some time to upgrade before it comes to End-of-Life.
+For Kosmorrolib, the library that actually makes the calculations, two versions are supported at the same time:
+
+- the last version is actively supported and receives fixes for both bugs and security issues,
+- the previous version receives fixes for security issues only.
 
 <aside class="center">
 
-{{ version_support() }}
+{{ lib_version_support() }}
 
 </aside>
 

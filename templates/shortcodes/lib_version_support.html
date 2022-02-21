@@ -1,0 +1,27 @@
+{% set_global is_last_version = true %}
+{% for version in config.extra.lib_supported_versions %}
+    {% if version.release_date %}
+        <div class="version-support{% if not version.eol_date %} supported{% endif %}">
+            <h4>
+                Version {{ version.number }}
+                {% if is_last_version %}
+                    {% set_global is_last_version = false %}
+                    <small class="badge" title="Version {{ version.number }} is the most recent release.&#10;Use it in priority.">Recommended</small>
+                {% endif %}
+            </h4>
+            <p>
+                <span class="release-date">Released on {{ version.release_date }}.</span>
+                {% if eol_date %}
+                <span class="support-status">
+                    End Of Life since {{ version.eol_date }}.
+                </span>
+                {% else %}
+                <span class="support-status">
+                    {% if not is_last_version %}Security fixes only{% else %}Actively supported{% endif %}
+                </span>
+                {% endif %}
+            </p>
+        </div>
+        {% if version.eol %}{% break %}{% endif %}
+    {% endif %}
+{% endfor %}
