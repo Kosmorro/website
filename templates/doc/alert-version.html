@@ -6,17 +6,18 @@
 {% set selectedVersion = path[3] %}
 {% for version in config.extra.lib_supported_versions %}
     {% if selectedVersion == version.number and not version.supported %}
-        {% if version.release_date == false %}
+        {% if not version.release_date %}
             <aside class="alert version">
                 <h3>You are reading the documentation of the next version of Kosmorrolib.</h3>
                 <p>The information might change at any time, and the features described here might be unstable, make your app crash, delete the Universe or, worse, kill your cat.</p>
                 <p>If you are looking for the documentation of the current version, <a href="/lib/doc/">click here</a>.</p>
             </aside>
-        {% else %}
+        {% elif version.eol_date %}
             <aside class="alert version">
-                <h3>You are reading the documentation of an old version of Kosmorrolib.</h3>
-                <p>You should consider upgrading to the last version to get profit from the last features.<br /></p>
-                <p>If you are looking for the documentation of the current version, <a href="/lib/doc/">click here</a>.</p>
+                <h3>You are reading the documentation of an old version of Kosmorrolib that is not maintained anymore.</h3>
+                <p>You should consider upgrading to the last version to get profit from the last features.<br />
+                If you are looking for the documentation of the current version, <a href="/lib/doc/">click here</a>.</p>
+                <p>For more information about the currently supported versions of Kosmorrolib, <a href="/support/versions/#kosmorrolib">see this page</a>.</p>
             </aside>
         {% endif %}
     {% endif %}
