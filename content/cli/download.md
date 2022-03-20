@@ -9,7 +9,7 @@ Kosmorro is currently available on the platforms listed bellow.
 
 - [Linux](#linux)
 - [FreeBSD](#freebsd)
-- [macOS](#macos) (_deprecated_)
+- [macOS](#macos)
 - [Compile from sources](#compile-from-sources)
 
 If you want to generate a PDF file, you might want to look at its [dedicated documentation](@/cli/generate-pdf.md) too.
