@@ -1,0 +1,23 @@
+{% extends 'page.html' %}
+
+{% block title %}{{ page.title }}{% endblock %}
+{% block ogtitle %}{{ page.title }}{% endblock %}
+{% block description %}{{ page.description }}{% endblock %}
+{% block ogdescription %}{{ page.description }}{% endblock %}
+
+{% block body %}
+
+
+<article>
+{{ page.content | safe }}
+
+{% filter markdown %}
+
+If you want to generate a PDF file, you might want to look at its [dedicated documentation](@/cli/generate-pdf.md) too.
+
+You might also want to [read the manpage](@/cli/manpage.md) to know how to use Kosmorro's command line program.
+
+{% endfilter %}
+</article>
+                
+{% endblock %}

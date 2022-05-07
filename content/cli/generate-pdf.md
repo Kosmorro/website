@@ -19,7 +19,7 @@ Before you use Kosmorro's PDF generator, you will need to install a TeXLive dist
 - **on Linux**, TeXLive is usually available in your package manager repositories.
   - **On Debian** and derivatives, install the `texlive` and the `texlive-latex-extra` packages from your distribution's repository.
   - **On Arch Linux** and derivatives, install the `texlive-core` and `texlive-bin` packages from your _extra_ repositories.
-- **on FreeBSD**, [install Kosmorro](@/cli/download.md) with the `PDF=on` option.
+- **on FreeBSD**, [install Kosmorro](@/cli/download/freebsd.md) with the `PDF=on` option.
 - **on macOS**, install the basic version of [MacTeX](https://www.tug.org/mactex/), the port of TeXLive for Mac:
     - **with HomeBrew** (recommended): `brew install basictex`
     - **from the official website**: head to the [Smaller download](https://www.tug.org/mactex/morepackages.html) page and download and install the _BasicTeX.pkg_ package.
