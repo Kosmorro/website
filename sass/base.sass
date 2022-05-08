@@ -352,14 +352,14 @@ html, body
 
                 > ul.os-select
                     list-style: none
-                    margin: 0
+                    margin: 1rem 0
                     padding: 0
                     text-align: center
                     cursor: default
 
                     > li
                         display: inline-block
-                        margin: 1rem
+                        padding: 0 1rem
                         position: relative
 
                         > a
@@ -371,6 +371,24 @@ html, body
                                 display: block
                                 font-size: 3rem
                                 vertical-align: middle
+
+                        > .soon
+                            position: absolute
+                            top: 0px
+                            right: -5px
+                            width: 50px
+                            transform: rotate(10deg)
+                            background: #8b0606
+                            padding: 1px 5px
+                            font-size: 0.45em
+                            border-radius: 3px
+                            transition: 100ms transform
+                            line-height: 1ex
+                            padding: 5px
+                            line-height: 2ex
+                        &:hover
+                            > .soon
+                                transform: rotate(5deg)
 
         > footer
             position: absolute
