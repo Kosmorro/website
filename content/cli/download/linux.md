@@ -21,12 +21,15 @@ If you don't use Arch (btw), two options are available for you:
 
 - Download [the AppImage file](/cli/download/kosmorro-latest-x86_64.AppImage), give it the execution rights and run it:
   ```bash
-  curl -o $HOME/.local/bin/kosmorro.AppImage \
-       https://kosmorro.space/cli/download/kosmorro-latest-x86_64.AppImage
-  chmod +x $HOME/.local/bin/kosmorro.AppImage
+  mkdir -p $HOME/.local/bin
+  export PATH="$HOME/.local/bin:$PATH"
 
+  curl -o $HOME/.local/bin/kosmorro \
+       https://kosmorro.space/cli/download/kosmorro-latest-x86_64.AppImage
+  chmod +x $HOME/.local/bin/kosmorro
+  
   # Run the application:
-  kosmorro.AppImage
+  kosmorro
   ```
 
 - Otherwise, you can install on your system: install Python 3 and PIP package manager, then use PIP to install Kosmorro.
