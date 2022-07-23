@@ -1,0 +1,6 @@
+Sitemap: https://kosmorro.space/sitemap.xml
+
+User-agent: *
+Allow: /
+Disallow: /img/*
+Disallow: /downloads/*
