@@ -148,28 +148,30 @@ html, body
             nav
                 position: sticky
                 top: 0
-                background: #dedede
+                background: white
                 cursor: default
                 margin-bottom: 100px
                 z-index: 1000
+                padding: 15px 50px
                 > a.logo
                     vertical-align: middle
                     display: inline-block
                     > img
                         display: block
-                        width: 256px
+                        height: 40px
+
+                        &.mobile
+                            display: none
+                            height: 40px
                 > ul
-                    position: relative
+                    position: absolute
+                    right: 50px
                     list-style: none
                     margin: 0
                     padding: 0
-                    padding-top: 9px
+                    padding-top: 5px
                     display: inline-block
                     vertical-align: middle
-                    &.right
-                        position: absolute
-                        right: 10px
-                        top: -20px
                     > li
                         display: inline-block
                         > a
@@ -397,7 +399,7 @@ html, body
             width: calc(100% - 220px)
             height: 200px
             background-color: #dedede
-            background-image: url("../img/svg/kosmorro-icon.svg")
+            background-image: url("../img/svg/kosmorro/kosmorro-icon.svg")
             background-repeat: no-repeat
             background-position: calc(100% - 50px) 50px
             background-size: 130px
@@ -444,30 +446,15 @@ html, body
     body > .container > .body > article
         width: 90%
 
-@media(max-width: 800px)
+@media(max-width: 610px)
     body > .container
         > .body
             nav
-                height: 85px
-                overflow-y: hidden
-                transition: 250ms height
-                &:hover
-                    height: 300px
-                &::after
-                    content: '≡'
-                    color: #555
-                    position: absolute
-                    top: 25px;
-                    right: 20px;
-                    font-size: 40px;
-                > ul
-                    display: block
-                    text-align: center
-                    margin-top: 25px
-                    > li
+                > a.logo > img
+                    &.normal
+                        display: none
+                    &.mobile
                         display: block
-                        > a
-                            padding: 0
                     &.right
                         position: static
                         margin-top: 10px

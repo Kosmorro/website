@@ -3,7 +3,7 @@ title = "Kosmorrolib - a library to calculate your ephemerides"
 description = "Kosmorro's calculation logic, for the developers."
 +++
 
-# ![Kosmorrolib](/img/svg/kosmorrolib-logo-white.svg) <small>A library to compute your ephemerides</small>
+# ![Kosmorrolib](/img/svg/kosmorro/kosmorrolib-logo-white.svg) <small>A library to compute your ephemerides</small>
 
 Kosmorrolib is the Python library internally used in Kosmorro. It provides easy-to-use functions for your calculation needs.
 

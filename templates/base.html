@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="/css/normalize.css/normalize.css" />
         <link rel="stylesheet" href="/base.css" />
         {% block stylesheets %}{% endblock %}
-        <meta name="theme-color" content="#dedede" />
+        <meta name="theme-color" content="#000" />
 
         <meta name="description" content="{% block description %}{% endblock %}" />
         <meta property="og:title" content="{% block ogtitle %}{% endblock %}" />
@@ -34,6 +34,9 @@
 
             <footer>
                 <ul class="social" aria-label="Social networks to follow the project">
+                    <li><a target="_blank" href="https://github.com/Kosmorro">
+                        <img src="/img/svg/github.svg" alt="GitHub" title="Follow the Octocat" />
+                    </a></li>
                     <li><a target="_blank" href="https://twitter.com/Kosmorro">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" title="Follow the project on Twitter">
                             <!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
