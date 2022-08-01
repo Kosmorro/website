@@ -11,6 +11,10 @@ html, body
     scrollbar-color: #ffca66 #222
     font-size: 30px
 
+
+    i
+        font-style: normal
+
     > .container
         position: relative
         font-family: Cantarell, sans-serif
@@ -414,9 +418,6 @@ html, body
 
             > ul.social
                 list-style: none
-                &::before
-                    content: "Follow the project:"
-                    display: block
                 > li
                     vertical-align: middle
                     display: inline-block
@@ -426,8 +427,8 @@ html, body
                         padding: 10px
                         display: block
                         width: 60px
-                        svg > path
-                            fill: #222
+                        color: #111
+                        text-decoration: none
 
             > .legal > .logo
                 text-decoration: none
