@@ -36,20 +36,6 @@ manpage:
 generate-jsonlds:
 	python3 .site-templates/scripts/jsonld.py
 
-cli-appimage:
-	mkdir -p static/cli/download
-
-	LATEST_RELEASE=$$(curl -L -s -H 'Accept: application/json' https://github.com/kosmorro/kosmorro/releases/latest); \
-	LATEST_VERSION=$$(echo $${LATEST_RELEASE} | sed -e 's/.*"tag_name":"\([^"]*\)".*/\1/'); \
-	ARTIFACT_URL="https://github.com/kosmorro/kosmorro/releases/download/$${LATEST_VERSION}/kosmorro.AppImage.zip"; \
-	echo "Downloading AppImage from $${ARTIFACT_URL}"; \
-	wget -O "static/cli/download/kosmorro.AppImage.zip" $${ARTIFACT_URL}
-
-	cd static/cli/download && unzip kosmorro.AppImage.zip
-	rm static/cli/download/kosmorro.AppImage.zip
-
-downloads: cli-appimage
-
 pages: changelog lib-doc manpage
 scripts: generate-jsonlds
 
