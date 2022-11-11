@@ -11,7 +11,7 @@ The library is built on [Skyfield](https://rhodesmill.org/skyfield/), an excelle
 
 ## Install the library
 
-Kosmorrolib is currently available in the version {{ lib_version() }} and needs Python 3.7+ to work.
+Kosmorrolib is currently available in the version {{ lib_version() }} and needs Python {{ lib_python_version() }}+ to work.
 
 The library is available [on PyPI](https://pypi.org/project/kosmorrolib/), so you can install it directly with PIP:
 

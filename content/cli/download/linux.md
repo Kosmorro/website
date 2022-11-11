@@ -17,31 +17,16 @@ yay kosmorro
 
 ## Other Linux distributions
 
-If you don't use Arch (btw), two options are available for you:
+If you don't use Arch (btw), you can install Kosmorro with PIP: install Python 3 and PIP package manager, then use PIP to install Kosmorro.
 
-- Download [the AppImage file](/cli/download/kosmorro-latest-x86_64.AppImage), give it the execution rights and run it:
-  ```bash
-  mkdir -p $HOME/.local/bin
-  export PATH="$HOME/.local/bin:$PATH"
+For instance, on Debian:
 
-  curl -o $HOME/.local/bin/kosmorro \
-       https://kosmorro.space/cli/download/kosmorro-latest-x86_64.AppImage
-  chmod +x $HOME/.local/bin/kosmorro
-  
-  # Run the application:
-  kosmorro
-  ```
+```bash
+sudo apt install python3 python3-pip
+pip3 install --user kosmorro
 
-- Otherwise, you can install on your system: install Python 3 and PIP package manager, then use PIP to install Kosmorro.
-
-  For instance, on Debian:
-
-  ```bash
-  sudo apt install python3 python3-pip
-  pip3 install --user kosmorro
-
-  # Run the application:
-  kosmorro
-  ```
+# Run the application:
+kosmorro
+```
 
 **Note:** if you get a "command not found" error when you try to run the `kosmorro` command, check that the `$HOME/.local/bin` is in your `$PATH`. This folder is a standard place to install applications locally, so this may be useful for many other apps.
