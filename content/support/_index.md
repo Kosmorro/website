@@ -25,20 +25,6 @@ If you have an account on GitHub, feel free to ask your questions in the _Discus
     <a href="https://github.com/Kosmorro/kosmorro/discussions" target="_blank" class="button invite gh-logo">Discuss on Kosmorrolib</a>
 </div>
 
-### On IRC
-
-Join the discussion on Kosmorro's official IRC channel hosted on Libera.Chat!
-
-- **Host:** `irc.libera.chat`
-- **Port:** 6697 (TLS)
-- **Channel:** `#kosmorro`
-
-
-<div class="center">
-    <a href="ircs://irc.libera.chat:6697/kosmorro" class="button invite irc-logo">Connect with your client</a>
-    <a href="https://web.libera.chat/?nick=Astronaut?#kosmorro" target="_blank" class="button invite irc-logo">Use the Webchat</a>
-</div>
-
 ### On Discord (French-speaking only)
 
 If you speak French, you can also join the Discord server to get support!
