@@ -47,9 +47,8 @@ hide_nav = true
 
 <div class="feature">
     <span class="explain">
-        All the calculations made by Kosmorro are made offline*, right on your computer.<br />
-        Just install Kosmorro and you're free to go anywhere you want.<br /><br />
-        <small>* An Internet connection is required just at the first run to download some internal files necessary for the calculations. This will not be necessary anymore in a future release.</small>
+        All the calculations made by Kosmorro are made offline, right on your computer.<br />
+        Just install Kosmorro and you're free to go anywhere you want.
     </span>
     <span class="screenshot">
         <img src="/img/offline.jpg" alt="" aria-hidden="true" style="max-height: 256px" />
