@@ -28,7 +28,7 @@ jobs:
           make pages
 
       - name: Build and deploy
-        uses: Deuchnord/zola-deploy-action@fix/safe-directory
+        uses: shalzz/zola-deploy-action@master
         env:
           PAGES_BRANCH: gh-pages
           TOKEN: ${{ secrets.TOKEN }}
