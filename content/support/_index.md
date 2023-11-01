@@ -30,5 +30,5 @@ If you have an account on GitHub, feel free to ask your questions in the _Discus
 If you speak French, you can also join the Discord server to get support!
 
 <div class="center">
-    <a href="https://discord.gg/K4gb7yDbCR" target="_blank" class="button invite discord-logo">Discuss on Discord</a>
+    <a href="https://discord.gg/TVX4MSKGaa" target="_blank" class="button invite discord-logo">Discuss on Discord</a>
 </div>
