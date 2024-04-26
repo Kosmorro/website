@@ -7,7 +7,9 @@
 
 {% include 'security.html' %}
 
+        <link href="/fa/css/fontawesome.min.css" rel="stylesheet" />
         <link href="/fa/css/brands.min.css" rel="stylesheet" />
+
         <link rel="stylesheet" href="/css/normalize.css/normalize.css" />
         <link rel="stylesheet" href="/base.css" />
         {% block stylesheets %}{% endblock %}
@@ -35,10 +37,13 @@
             <footer>
                 <ul class="social" aria-label="Social networks to follow the project">
                     <li><a target="_blank" href="https://github.com/Kosmorro">
-                        <i class="fa-brands fa-github" title="Follow the Octocat" aria-label="GitHub logo"></i>
+                        <i class="fa-brands fa-github" title="Follow the project on GitHub" aria-label="GitHub logo"></i>
                     </a></li>
                     <li><a target="_blank" href="https://fosstodon.org/@Kosmorro" rel="me">
                         <i class="fa-brands fa-mastodon" title="Follow the project on Mastodon" aria-label="Mastodon logo"></i>
+                    </a></li>
+                    <li><a target="_blank" href="https://bsky.app/profile/kosmorro.space" rel="me">
+                        <i class="fa-brands fa-bluesky" title="Follow the project on Bluesky" aria-label="Bluesky logo"></i>
                     </a></li>
                 </ul>
                 <p class="legal">
