@@ -20,7 +20,7 @@ lib-doc:
 		rm content/lib/doc/$${branch}/LICENSE.md; \
 	done; \
 	echo "Adding redirections to version $${branch}"; \
-	echo "+++\ntitle = \"Redirecting to version $${branch}...\"\nredirect_to = \"/lib/doc/$${current_version}\"\n+++" > content/lib/doc/current/_index.md; \
+	echo -e "+++\ntitle = \"Redirecting to version $${branch}...\"\nredirect_to = \"/lib/doc/$${current_version}\"\n+++" > content/lib/doc/current/_index.md; \
 	cp content/lib/doc/current/_index.md content/lib/doc/_index.md
 
 manpage:
@@ -33,13 +33,9 @@ manpage:
 		| sed -E 's/^`([A-Za-z_=-]+)`/- \0/' \
 		>> content/cli/manpage.md
 
-generate-jsonlds:
-	python3 .site-templates/scripts/jsonld.py
-
 pages: changelog lib-doc manpage
-scripts: generate-jsonlds
 
-serve: scripts
+serve: pages
 	zola serve
 
 build:
