@@ -1,6 +1,6 @@
 +++
-title = "Download Kosmorro on Linux"
-description = "All the instructions to install Kosmorro on Linux!"
+title = "Build Kosmorro from its source code"
+description = "All the instructions to build Kosmorro!"
 +++
 
 # Build Kosmorro from its sources code

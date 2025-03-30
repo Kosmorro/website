@@ -3,17 +3,46 @@
 @import "fonts/raleway"
 @import "fonts/titillium"
 
+$yellow: #ffca66
+$darkGrey: #222
+
 html, body
     margin: 0
     padding: 0
     height: 100%
     scrollbar-width: auto
-    scrollbar-color: #ffca66 #222
+    scrollbar-color: $yellow $darkGrey
     font-size: 30px
-
 
     i
         font-style: normal
+
+    ol
+        list-style: none
+        counter-reset: discs
+        margin-left: 0.5em
+
+        > li
+            counter-increment: discs
+            margin-bottom: 15px
+            position: relative
+
+            &::before
+                content: counter(discs)
+                position: absolute
+                margin-left: -2.5em
+                font-size: 0.75em
+                background: $darkGrey
+                color: $yellow
+                font-weight: bold
+                border-radius: 50%
+                padding: 8px 13px
+                transition: 250ms
+
+            &:hover::before
+                background: $yellow
+                color: $darkGrey
+
 
     > .container
         position: relative
