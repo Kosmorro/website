@@ -1,10 +1,9 @@
 {% extends 'base.html' %}
 
-{% block title %}Kosmorro - A program to calculate your ephemerides{% endblock %}
-{% block ogtitle %}Kosmorro - A program to calculate your ephemerides{% endblock %}
-{% block description %}Available for Linux, FreeBSD and Mac!{% endblock %}
-{% block ogdescription %}Available for Linux, FreeBSD and Mac!{% endblock %}
-{% block jsonld %}<script type="application/ld+json">{% include "jsonld/SoftwareApplications/cli.html" %}</script>{% endblock %}
+{% block title %}Kosmorro{% endblock %}
+{% block ogtitle %}Kosmorro{% endblock %}
+{% block description %}Prepare your astronomy observation nights in less than 10 seconds!{% endblock %}
+{% block ogdescription %}Prepare your astronomy observation nights in less than 10 seconds!{% endblock %}
 
 {% block stylesheets %}
 <link rel="stylesheet" href="/kosmorro-landing.css" />
@@ -23,6 +22,7 @@
                 <a href="/cli/download" class="button">Download</a>
 
                 <small class="system-logos">
+                    <i class="fab fa-windows" title="Available on Windows"></i>
                     <i class="fab fa-apple" title="Available on macOS"></i>
                     <i class="fab fa-linux" title="Available on GNU/Linux"></i>
                     <i class="fab fa-freebsd" title="Available on FreeBSD"></i>
