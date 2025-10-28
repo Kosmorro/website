@@ -21,7 +21,7 @@ curl -fsSL https://kosmorro.space/apt.gpg | gpg --dearmor | sudo tee /etc/apt/tr
 Finally, install Kosmorro with your favorite package manager:
 
 ```bash
-sudo apt install --no-install-recommends kosmorro
+sudo apt install kosmorro
 ```
 
 ## Arch Linux
