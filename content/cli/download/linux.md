@@ -18,9 +18,10 @@ echo "deb [arch=all] https://pkg.kosmorro.space/apt main main" | sudo tee /etc/a
 curl -fsSL https://kosmorro.space/apt.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/kosmorro.gpg
 ```
 
-Finally, install Kosmorro with your favorite package manager:
+Finally, update your cache and install Kosmorro with your favorite package manager:
 
 ```bash
+sudo apt update
 sudo apt install kosmorro
 ```
 
