@@ -311,7 +311,7 @@ html, body
                             font-size: 1.2em
                             margin: 0
                             padding: 0
-                        
+
                             > .badge
                                 position: absolute
                                 right: 10px
@@ -360,7 +360,7 @@ html, body
                     outline-offset: 20px
                     outline-color: transparent
                     transition: 250ms outline-offset, 250ms outline-color
-                    
+
                     &:focus
                         outline-color: white
                         outline-offset: 0
@@ -448,16 +448,24 @@ html, body
             > ul.social
                 list-style: none
                 > li
-                    vertical-align: middle
                     display: inline-block
-                    font-size: 64px
                     margin: 5px
+
                     > a
                         padding: 10px
                         display: block
                         width: 60px
                         color: #111
                         text-decoration: none
+
+                        > i
+                            font-size: 64px
+                            vertical-align: middle
+
+                            &.fa-bluesky
+                                font-size: 50px
+
+
 
             > .legal > .logo
                 text-decoration: none
@@ -490,7 +498,7 @@ html, body
                         margin-top: 10px
                         > li
                             display: inline-block
-            
+
             > article
                 > .alert
                     &.version
@@ -499,7 +507,7 @@ html, body
                 aside > .version-support
                     display: block
                     max-width: 100%
-    
+
         > footer
             background-image: none
             padding: 20px
