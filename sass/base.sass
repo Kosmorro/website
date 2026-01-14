@@ -122,9 +122,8 @@ html, body
                         &.discord-logo::before
                             filter: invert(0%)
 
-                        &.irc-logo::before
-                            background-color: black
-                            color: white
+                        &.matrix-logo::before
+                            filter: invert(0%)
 
                     &.gh-logo::before
                         content: ""
@@ -152,20 +151,17 @@ html, body
                         filter: invert(100%)
                         transition: 250ms
 
-                    &.irc-logo::before
-                        content: "#"
-                        font-size: 20px
-                        font-style: italic
-                        color: black
-                        background-color: white
-                        border-radius: 20px
+                    &.matrix-logo::before
+                        content: ""
                         position: absolute
                         left: 15px
-                        top: 12px
+                        top: 11px
                         width: 32px
                         height: 32px
-                        line-height: 30px
-                        letter-spacing: 3px
+                        background-image: url("/img/svg/matrix.svg")
+                        background-repeat: no-repeat
+                        background-size: 32px
+                        filter: invert(100%)
                         transition: 250ms
 
             section

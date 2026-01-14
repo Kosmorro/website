@@ -25,9 +25,17 @@ If you have an account on GitHub, feel free to ask your questions in the _Discus
     <a href="https://github.com/Kosmorro/kosmorro/discussions" target="_blank" class="button invite gh-logo">Discuss on Kosmorrolib</a>
 </div>
 
+### On Matrix
+
+If you are on Matrix, there's a space for Kosmorro.
+
+<div class="center">
+    <a href="https://matrix.to/#/#kosmorro:matrix.org" target="_blank" class="button invite matrix-logo">Discuss on Matrix</a>
+</div>
+
 ### On Discord (French-speaking only)
 
-If you speak French, you can also join the Discord server to get support!
+If you speak French, you can also join Deuchnord's Discord server to get support on the `#kosmorro` text channel.
 
 <div class="center">
     <a href="https://discord.gg/TVX4MSKGaa" target="_blank" class="button invite discord-logo">Discuss on Discord</a>
