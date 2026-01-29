@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+    <head>
+        <meta charset="UTF-8">
+        <title>Kosmorro Changelog</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https://stats.deuchnord.fr; img-src 'self'; script-src 'self' https://stats.deuchnord.fr; style-src 'self' 'unsafe-inline'; font-src 'self'; frame-ancestors 'none'; form-action 'self'; base-uri 'self'" />
+        <meta http-equiv="Same-Origin" content="always" />
+        <meta http-equiv="Content-Type-Options" content="nosniff" />
+        <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+        <meta http-equiv="X-Frame-Options" content="DENY" />
+
+
+        <link href="/fa/css/fontawesome.min.css" rel="stylesheet" />
+        <link href="/fa/css/solid.min.css" rel="stylesheet" />
+        <link href="/fa/css/brands.min.css" rel="stylesheet" />
+        <link href="/fark/css/fork-awesome.min.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="/css/normalize.css/normalize.css" />
+        <link rel="stylesheet" href="/base.css" />
+        
+        <meta name="theme-color" content="#000" />
+
+        <meta name="description" content="Every change in Kosmorro since its first version." />
+        <meta property="og:title" content="Kosmorro Changelog" />
+        <meta property="og:description" content="Every change in Kosmorro since its first version." />
+        <meta property="og:url" content="https://kosmorro.space/cli/changelog/" />
+        <meta property="og:site_name" content="Kosmorro" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://kosmorro.space/img/kosmorro-open-graph.jpg" />
+
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="body">
+                
+                    <nav><a href="/" class="logo">
+    <img class="normal" src="/img/svg/kosmorro/kosmorro-logo.svg" alt="Kosmorro" />
+    <img class="mobile" src="/img/svg/kosmorro/kosmorro-icon.svg" alt="Kosmorro" />
+</a>
+<ul>
+    <li><a href="/lib">Library</a></li>
+    <li><a href="/support">Support</a></li>
+    <li><a href="/contribute">Contribute</a></li>
+</ul>          
+</nav>
+                
+                
+
+
+<ul class="toc">
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-1-0-1-2026-01-03">Version 1.0.1 (2026-01-03)</a>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-1-0-0-2026-01-03">Version 1.0.0 (2026-01-03)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#features">Features</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#breaking-changes">BREAKING CHANGES</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-10-13-2023-12-17">Version 0.10.13 (2023-12-17)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#bug-fixes">Bug Fixes</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-10-12-2023-05-24">Version 0.10.12 (2023-05-24)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#bug-fixes-1">Bug Fixes</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-10-11-2022-11-11">Version 0.10.11 (2022-11-11)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#bug-fixes-2">Bug Fixes</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#build-system">Build System</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#breaking-changes-1">BREAKING CHANGES</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-10-10-2022-03-20">Version 0.10.10 (2022-03-20)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#bug-fixes-3">Bug Fixes</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#features-1">Features</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#breaking-changes-2">BREAKING CHANGES</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-10-9-2022-01-12">Version 0.10.9 (2022-01-12)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#bug-fixes-4">Bug Fixes</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-10-8-2022-01-10">Version 0.10.8 (2022-01-10)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#bug-fixes-5">Bug Fixes</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-10-7-2021-12-04">Version 0.10.7 (2021-12-04)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#bug-fixes-6">Bug Fixes</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-10-6-2021-11-20">Version 0.10.6 (2021-11-20)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#bug-fixes-7">Bug Fixes</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-10-5-2021-11-09">Version 0.10.5 (2021-11-09)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#bug-fixes-8">Bug Fixes</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-10-4-2021-11-01">Version 0.10.4 (2021-11-01)</a>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-10-3-2021-11-01">Version 0.10.3 (2021-11-01)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#bug-fixes-9">Bug Fixes</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-10-2-2021-08-26">Version 0.10.2 (2021-08-26)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#bug-fixes-10">Bug Fixes</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-10-1-2021-06-20">Version 0.10.1 (2021-06-20)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#bug-fixes-11">Bug Fixes</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-10-0-2021-05-30">Version 0.10.0 (2021-05-30)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#bug-fixes-12">Bug Fixes</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#features-2">Features</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-9-0-2021-01-31">Version 0.9.0 (2021-01-31)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#code-refactoring">Code Refactoring</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#continuous-integration">Continuous Integration</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#features-3">Features</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#breaking-changes-3">BREAKING CHANGES</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-8-1-2020-06-07">Version 0.8.1 (2020-06-07)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#bug-fixes-13">Bug Fixes</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-8-0-2020-05-22">Version 0.8.0 (2020-05-22)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#code-refactoring-1">Code Refactoring</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#features-4">Features</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#breaking-changes-4">BREAKING CHANGES</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-7-0-2020-04-05">Version 0.7.0 (2020-04-05)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#features-5">Features</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#breaking-changes-5">BREAKING CHANGES</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-6-2-2020-03-19">Version 0.6.2 (2020-03-19)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#bug-fixes-14">Bug Fixes</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-6-1-2020-03-08">Version 0.6.1 (2020-03-08)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#bug-fixes-15">Bug Fixes</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-6-0-2020-03-01">Version 0.6.0 (2020-03-01)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#features-6">Features</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-5-2-2020-02-04">Version 0.5.2 (2020-02-04)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#bug-fixes-16">Bug Fixes</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-5-1-2020-02-03">Version 0.5.1 (2020-02-03)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#bug-fixes-17">Bug Fixes</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-5-0-2020-01-26">Version 0.5.0 (2020-01-26)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#features-7">Features</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-4-0-2019-12-28">Version 0.4.0 (2019-12-28)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#features-8">Features</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#breaking-changes-6">BREAKING CHANGES</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-3-1-2019-12-01">Version 0.3.1 (2019-12-01)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#bug-fixes-18">Bug Fixes</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-3-0-2019-12-01">Version 0.3.0 (2019-12-01)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#bug-fixes-19">Bug Fixes</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#features-9">Features</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#performance-improvements">Performance Improvements</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#breaking-changes-7">BREAKING CHANGES</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-2-3-2019-11-24">Version 0.2.3 (2019-11-24)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#bug-fixes-20">Bug Fixes</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-2-2-2019-11-18">Version 0.2.2 (2019-11-18)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#bug-fixes-21">Bug Fixes</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#features-10">Features</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-2-1-2019-11-17">Version 0.2.1 (2019-11-17)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#bug-fixes-22">Bug Fixes</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#version-0-2-0-2019-11-17">Version 0.2.0 (2019-11-17)</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#added">Added</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://kosmorro.space/cli/changelog/#changed">Changed</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://kosmorro.space/cli/changelog/#v0-1-0-2019-11-10">v0.1.0 (2019-11-10)</a>
+            
+        </li>
+    
+</ul>
+
+
+<article class="with-toc">
+<h1 id="kosmorro-changelog">Kosmorro Changelog</h1>
+<p>This page lists all the changes that have been made on each version of Kosmorro.</p>
+<p>Looking for information about how long the versions of Kosmorro are supported? <a href="/support/versions#kosmorro">Check this page</a>.</p>
+<h2 id="version-1-0-1-2026-01-03"><a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/compare/v1.0.0...v1.0.1">Version 1.0.1</a> (2026-01-03)</h2>
+<p>This is a release to bypass a buguous release that PyPI does not want me upload.</p>
+<h2 id="version-1-0-0-2026-01-03"><a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/compare/v0.10.13...v1.0.0">Version 1.0.0</a> (2026-01-03)</h2>
+<h3 id="features">Features</h3>
+<ul>
+<li>add support for Python 3.13 and 3.14 (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/d7def507034e6af0d7c7bdbc4d4174b046b082ac">d7def50</a>)</li>
+<li><strong>i18n:</strong> add Romanian translation (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/a61bdb8dc774e8cbbe6feac918e4625e0a273b86">a61bdb8</a>) (thanks @<a rel="noopener external" target="_blank" href="https://github.com/Nic-T">Nic-T</a>!)</li>
+<li><strong>i18n:</strong> add Tamil translation (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/089d4391cded47b97fc683a44c6068e2d0dd0caf">089d439</a>) (thanks <a rel="noopener external" target="_blank" href="https://tamilneram.github.io/">தமிழ்நேரக்குழு</a>!)</li>
+<li><strong>i18n:</strong> add Kabyle translation (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/fcd99f9389d202f0a557e6356d1597805d220f74">fcd99f9</a>) (thanks <a rel="noopener external" target="_blank" href="https://github.com/ButterflyOfFire">ButterflyOfFire</a>!)</li>
+<li>replace latitude and longitude with one argument alone: --position (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/issues/191">#191</a>) (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/5cab68ee926e1e085b6fbcff98e7575bb91327db">5cab68e</a>)</li>
+<li>add support for <code>KOSMORRO_POSITION</code> environment variable (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/6c5dc6fac63ad23e689aa8d9819128f0c7232193">6c5dc6f</a>)</li>
+<li>add support for command line completion (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/151c3a7a5fecc756f1ca66daa43bfb4e49180ae8">151c3a7</a>)</li>
+<li>add support for seasons and lunar eclipses (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/facd3197d602371a0a96d3ddde6033f1e6673f13">facd319</a>)</li>
+<li>guess output format from output file extension (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/issues/197">#197</a>) (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/4b1f06e221dba2efcfca68119df25eca28bc89d7">4b1f06e</a>)</li>
+<li>New export format: LaTeX (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/4d5b9415d528533d42fd3466e4425287e9f6867d">4d5b941</a>)</li>
+<li>send error and warning messages in standard error instead of standard output (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/c377c634cbfe246246bfbb34ed6c45e7bf80a1e6">c377c63</a>)</li>
+<li><strong>timezone:</strong> add support for the <a rel="noopener external" target="_blank" href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">tz database</a> (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/3a87cfad10e45e94cf508b924b287fcd6321f08a">3a87cfa</a>)</li>
+</ul>
+<h3 id="breaking-changes">BREAKING CHANGES</h3>
+<ul>
+<li><code>--latitude</code> and <code>-longitude</code> are not supported anymore. Use <code>--position</code> instead.</li>
+</ul>
+<h2 id="version-0-10-13-2023-12-17"><a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/compare/v0.10.12...v0.10.13">Version 0.10.13</a> (2023-12-17)</h2>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ul>
+<li>compatibility with Python 3.12 (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/4d6b980115111aed7036dafb461c0933467eaa7e">4d6b980</a>)</li>
+</ul>
+<h2 id="version-0-10-12-2023-05-24"><a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/compare/v0.10.11...v0.10.12">Version 0.10.12</a> (2023-05-24)</h2>
+<h3 id="bug-fixes-1">Bug Fixes</h3>
+<ul>
+<li>support Python 3.11 (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/issues/316">#316</a>) (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/209aab06e48a75b3161f337b0d0f56b6a63ce97f">209aab0</a>)</li>
+</ul>
+<h2 id="version-0-10-11-2022-11-11"><a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/compare/v0.10.10...v0.10.11">Version 0.10.11</a> (2022-11-11)</h2>
+<h3 id="bug-fixes-2">Bug Fixes</h3>
+<ul>
+<li>fix localization for Earth and apsis (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/issues/275">#275</a>) (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/1f1118cf3e003c773a429f3d5d593960368a50e1">1f1118c</a>)</li>
+</ul>
+<h3 id="build-system">Build System</h3>
+<ul>
+<li>add support for Python 3.11 (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/issues/295">#295</a>) (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/08da3072f57add8c40b52a4fd45291b1c9216b8a">08da307</a>)</li>
+<li>remove AppImage (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/issues/294">#294</a>) (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/3bf4ed737c3278173dabb47324d9993e87141741">3bf4ed7</a>)</li>
+</ul>
+<h3 id="breaking-changes-1">BREAKING CHANGES</h3>
+<ul>
+<li>Python 3.7 is not supported anymore</li>
+<li>AppImage is no longer available. This decision has been made because it has become hard to maintain lately, and I don't have time nor motivation to fix it.</li>
+</ul>
+<h2 id="version-0-10-10-2022-03-20"><a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/compare/v0.10.9...v0.10.10">Version 0.10.10</a> (2022-03-20)</h2>
+<h3 id="bug-fixes-3">Bug Fixes</h3>
+<ul>
+<li>use Babel to translate the dates (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/92681131062eb0a93e901a5598353e36d9fc590f">9268113</a>)</li>
+<li><strong>events:</strong> ignore unsupported event types (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/9bfa8f503d4b46f91777d0b99fbc84f2a116a340">9bfa8f5</a>)</li>
+</ul>
+<h3 id="features-1">Features</h3>
+<ul>
+<li><strong>i18n:</strong> delete pseudo-translation (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/b2535abd4aa03e700e5e482f8c5cf7af050eac29">b2535ab</a>)</li>
+</ul>
+<h3 id="breaking-changes-2">BREAKING CHANGES</h3>
+<ul>
+<li>Docker support has been removed.
+If you were using it, please migrate to <a rel="noopener external" target="_blank" href="https://kosmorro.space/cli/download/">one of the other available options</a>.</li>
+</ul>
+<h2 id="version-0-10-9-2022-01-12"><a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/compare/v0.10.7...v0.10.9">Version 0.10.9</a> (2022-01-12)</h2>
+<h3 id="bug-fixes-4">Bug Fixes</h3>
+<ul>
+<li>fix distribution on PyPI</li>
+</ul>
+<h2 id="version-0-10-8-2022-01-10"><a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/compare/v0.10.7...v0.10.8">Version 0.10.8</a> (2022-01-10)</h2>
+<h3 id="bug-fixes-5">Bug Fixes</h3>
+<ul>
+<li>fix locale support that led to an exception (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/38571c3084edfec6cafeac16755dde2cd6c5ee66">38571c3</a>)</li>
+</ul>
+<h2 id="version-0-10-7-2021-12-04"><a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/compare/v0.10.6...v0.10.7">Version 0.10.7</a> (2021-12-04)</h2>
+<h3 id="bug-fixes-6">Bug Fixes</h3>
+<ul>
+<li>return next Moon phase with the correct time zone (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/1cc891395e2081d431d63a4d4be303a8121c2daa">1cc8913</a>)</li>
+</ul>
+<h2 id="version-0-10-6-2021-11-20"><a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/compare/v0.10.5...v0.10.6">Version 0.10.6</a> (2021-11-20)</h2>
+<h3 id="bug-fixes-7">Bug Fixes</h3>
+<ul>
+<li><strong>colors:</strong> use colors adapted on both dark and light background (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/9bdb490435a4ca9741911396a28fa6bbdb47159b">9bdb490</a>)</li>
+<li><strong>events:</strong> fix event details display for maximal elongation (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/d73f74a34cc21ff8b092d65f77aacf66529ab8bb">d73f74a</a>)</li>
+</ul>
+<h2 id="version-0-10-5-2021-11-09"><a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/compare/v0.10.4...v0.10.5">Version 0.10.5</a> (2021-11-09)</h2>
+<h3 id="bug-fixes-8">Bug Fixes</h3>
+<ul>
+<li>fix a display issue on the events list when Kosmorrolib returns events not supported by the CLI (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/e82af8f4b9d3a1511876718ff99d5bcc6dce9067">e82af8f</a>)</li>
+<li>fix KeyError on events processing (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/be6bf530b7c57e9a54da09c86bcca7bfcbadf595">be6bf53</a>)</li>
+</ul>
+<h2 id="version-0-10-4-2021-11-01"><a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/compare/v0.10.3...v0.10.4">Version 0.10.4</a> (2021-11-01)</h2>
+<p>This version is empty and contains exactly the same things as v0.10.3.
+It has been created because of a manipulation mistake that led to the creation of a wrong version on PyPI.</p>
+<p>If v0.10.3 does not exist on your distribution, install v0.10.4, and you will have exactly the same thing.</p>
+<h2 id="version-0-10-3-2021-11-01"><a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/compare/v0.10.2...v0.10.3">Version 0.10.3</a> (2021-11-01)</h2>
+<h3 id="bug-fixes-9">Bug Fixes</h3>
+<ul>
+<li>update Kosmorrolib to version 1.0.1 (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/issues/207">#207</a>) (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/b492e7f946c3452de3f09a36d40f458947f8f6e9">b492e7f</a>)
+<strong>Note:</strong> if you were using Kosmorro &lt; 0.10.3, files were automatically downloaded. Those files are not necessary anymore, so you can delete the folder <code>$HOME/.kosmorro-cache</code></li>
+</ul>
+<h2 id="version-0-10-2-2021-08-26"><a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/compare/v0.10.1...v0.10.2">Version 0.10.2</a> (2021-08-26)</h2>
+<h3 id="bug-fixes-10">Bug Fixes</h3>
+<ul>
+<li>NoneType error on JSON output without position (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/issues/199">#199</a>) (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/6988e77838c31ce4bf2fcff9da8e13b21cd5b494">6988e77</a>)</li>
+</ul>
+<h2 id="version-0-10-1-2021-06-20"><a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/compare/v0.10.0...v0.10.1">Version 0.10.1</a> (2021-06-20)</h2>
+<h3 id="bug-fixes-11">Bug Fixes</h3>
+<ul>
+<li>enhance forward compatibility with Kosmorrolib (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/issues/189">#189</a>) (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/1fe90d2603edbe68d7a119a0a7fb3649b55abe68">1fe90d2</a>)</li>
+<li><strong>PDF export:</strong> fix the failure on PDF saving (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/issues/186">#186</a>) (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/8d71b611e036c7cbb39683054dd6485c774076f7">8d71b61</a>)</li>
+</ul>
+<h2 id="version-0-10-0-2021-05-30"><a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/compare/v0.9.0...v0.10.0">Version 0.10.0</a> (2021-05-30)</h2>
+<h3 id="bug-fixes-12">Bug Fixes</h3>
+<ul>
+<li>fix English messages (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/issues/178">#178</a>) (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/666198497398700f0a9540ba5cf7448895e29e75">6661984</a>)</li>
+</ul>
+<h3 id="features-2">Features</h3>
+<ul>
+<li>add official Docker image (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/issues/137">#137</a>) (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/a6d3575977046003d27c03f82e4635c36f7f34e7">a6d3575</a>)</li>
+<li>use Kosmorrolib (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/issues/162">#162</a>) (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/87206d706893fef714e955cf6047483bc815a327">87206d7</a>)</li>
+</ul>
+<h2 id="version-0-9-0-2021-01-31"><a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/compare/v0.8.1...v0.9.0">Version 0.9.0</a> (2021-01-31)</h2>
+<h3 id="code-refactoring">Code Refactoring</h3>
+<ul>
+<li>use <code>enum</code> instead of <code>dict</code>s for the events and moon phase (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/issues/129">#129</a>) (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/8b723bfd221dbcddae1717c5e1211a99d828b67e">8b723bf</a>)</li>
+</ul>
+<h3 id="continuous-integration">Continuous Integration</h3>
+<ul>
+<li><strong>compatibility:</strong> add support for Python 3.9 (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/issues/131">#131</a>) (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/0b12e71da8ba5ef9079a86a5eb401ae3f32beba2">0b12e71</a>)</li>
+</ul>
+<h3 id="features-3">Features</h3>
+<ul>
+<li><strong>event:</strong> add support for moon apogee and perigee (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/commit/331ab99aa1c3647a45eb05c6850241ebb205fdfb">331ab99</a>)</li>
+</ul>
+<h3 id="breaking-changes-3">BREAKING CHANGES</h3>
+<ul>
+<li><strong>compatibility:</strong> on Ubuntu 20.04+, the <code>texlive-latex-extra</code> package is needed to generate the PDF output</li>
+<li><strong>kosmorrolib:</strong> some methods in <code>Event</code> and <code>MoonPhase</code> classes have been dropped in favor of <code>enum.Enum</code>'s <code>name</code> and <code>value</code> properties.</li>
+</ul>
+<h2 id="version-0-8-1-2020-06-07"><a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/compare/v0.8.0...v0.8.1">Version 0.8.1</a> (2020-06-07)</h2>
+<h3 id="bug-fixes-13">Bug Fixes</h3>
+<ul>
+<li>avoid returning ephemerides for yesterday or tomorrow (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/75eba4977c7ea928e76a99710041f01c2f500972">75eba49</a>)</li>
+<li>handle out of range date error (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/c39cd3aefa263eef9d2a4f42717e0eb05d3e0920">c39cd3a</a>)</li>
+</ul>
+<h2 id="version-0-8-0-2020-05-22"><a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/compare/v0.7.0...v0.8.0">Version 0.8.0</a> (2020-05-22)</h2>
+<h3 id="code-refactoring-1">Code Refactoring</h3>
+<ul>
+<li>simplify ephemerides, remove dead code (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/6618712030432d992f957f34e522b792ee74ecc0">6618712</a>)</li>
+</ul>
+<h3 id="features-4">Features</h3>
+<ul>
+<li>add support for relative dates on --date argument (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/b9454be45941ce2b271959f9873692516c555c88">b9454be</a>) (thanks @Brainface1!)</li>
+<li>display a graph in the PDF output for the ephemerides (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/4ea148e8d1a31ad6d369ace1b5bdaa9b0440be3b">4ea148e</a>)</li>
+</ul>
+<h3 id="breaking-changes-4">BREAKING CHANGES</h3>
+<ul>
+<li>the JSON format has deeply changed to enhance its consistency</li>
+</ul>
+<h2 id="version-0-7-0-2020-04-05"><a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/compare/v0.6.2...v0.7.0">Version 0.7.0</a> (2020-04-05)</h2>
+<h3 id="features-5">Features</h3>
+<ul>
+<li>add support for environment variables (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/5dec0dcc4cb3483ee4962a4ae7e86135e4bded06">5dec0dc</a>)</li>
+<li>add support for Moon conjunctions (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/c063f6e0f50e0c11c0e77c9fe16dedef0133a9af">c063f6e</a>)</li>
+<li>add support for occultations (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/b8d6ae2f510b384ecbc0a960bea764e96ec656a0">b8d6ae2</a>)</li>
+<li>move the date to a single argument (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/32489ae355bba4facb6202eed929dfe4639cb632">32489ae</a>)</li>
+</ul>
+<h3 id="breaking-changes-5">BREAKING CHANGES</h3>
+<ul>
+<li>the --day, --month and --year arguments have been removed in the
+favor of a single one.</li>
+</ul>
+<h2 id="version-0-6-2-2020-03-19"><a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/compare/v0.6.1...v0.6.2">Version 0.6.2</a> (2020-03-19)</h2>
+<h3 id="bug-fixes-14">Bug Fixes</h3>
+<ul>
+<li>remove Mercury and Venus opposition (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/1b4c4991274503663ace52c02fd46a19bef6b718">1b4c499</a>)</li>
+</ul>
+<h2 id="version-0-6-1-2020-03-08"><a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/compare/v0.6.0...v0.6.1">Version 0.6.1</a> (2020-03-08)</h2>
+<h3 id="bug-fixes-15">Bug Fixes</h3>
+<ul>
+<li><strong>events:</strong> prevent false detection of conjunctions (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/c7bc7574df1b0469aad1226887495ce013b615f1">c7bc757</a>)</li>
+<li>handle KeyboardInterrupt exception (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/a7cb46e857e2ca8e55c61fba522b911fcabdc86c">a7cb46e</a>)</li>
+<li>remove the "timezone" word in the PDF output’s introduction (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/5ec56c40b1ad80c81a7f5c4e1f63d099403f0a5d">5ec56c4</a>)</li>
+</ul>
+<h2 id="version-0-6-0-2020-03-01"><a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/compare/v0.5.2...v0.6.0">Version 0.6.0</a> (2020-03-01)</h2>
+<h3 id="features-6">Features</h3>
+<ul>
+<li>add ability to save PDF file (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/2fadc2a95ebd7b8e72633d4a7209a08bcb0dfebc">2fadc2a</a>)</li>
+<li>add support for maximal elongations of Mercury and Venus (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/9dbc09363134f6b4647d07cb54aea387e1a36fab">9dbc093</a>)</li>
+<li>add support for timezones (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/d7730bd2ad5e1bd0d28de759c674e0c799c0bb06">d7730bd</a>)</li>
+</ul>
+<h2 id="version-0-5-2-2020-02-04"><a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/compare/v0.5.1...v0.5.2">Version 0.5.2</a> (2020-02-04)</h2>
+<h3 id="bug-fixes-16">Bug Fixes</h3>
+<ul>
+<li>add missing dependency for PIP (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/906a5924a2cbdca71da793b355880571072aa81c">906a592</a>)</li>
+</ul>
+<h2 id="version-0-5-1-2020-02-03"><a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/compare/v0.5.0...v0.5.1">Version 0.5.1</a> (2020-02-03)</h2>
+<h3 id="bug-fixes-17">Bug Fixes</h3>
+<ul>
+<li>add compatibility for Skyfield 1.17 (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/081aab129e8245e795e569f38f139285a697777a">081aab1</a>)</li>
+</ul>
+<h2 id="version-0-5-0-2020-01-26"><a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/compare/v0.4.0...v0.5.0">Version 0.5.0</a> (2020-01-26)</h2>
+<h3 id="features-7">Features</h3>
+<ul>
+<li>add colors in the text return (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/38fc06657fb7452e35e81e61fb2b8990bf341f72">38fc066</a>)</li>
+<li><strong>i18n:</strong> make the strings translatable (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/c4f07a1d647a6829bdc1ed7afe85462093203ef7">c4f07a1</a>)
+<ul>
+<li>Kosmorro is now available in French and German!</li>
+</ul>
+</li>
+</ul>
+<h2 id="version-0-4-0-2019-12-28"><a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/compare/v0.3.1...v0.4.0">Version 0.4.0</a> (2019-12-28)</h2>
+<h3 id="features-8">Features</h3>
+<ul>
+<li><strong>events:</strong> add support for conjunctions (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/8d60a2ad9925a9bd10f070e5df8d5f18cdd0f81b">8d60a2a</a>)</li>
+<li>rename fields in the JSON response for more coherence (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/4029ba9ec208214d24070f99be06bc88d7923210">4029ba9</a>)</li>
+<li><strong>ephemerides:</strong> compute ephemerides if the position is set only (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/467c8227df0460785a2ade87de6a07f4c0ba0fc9">467c822</a>)</li>
+<li><strong>events:</strong> add support for opposition events (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/fa2da9e4a9468b4f8ad0fa2b2184fa93c5513fbe">fa2da9e</a>)</li>
+</ul>
+<h3 id="breaking-changes-6">BREAKING CHANGES</h3>
+<ul>
+<li>the fields "details" and "ephemerides" have been switched.</li>
+<li><strong>ephemerides:</strong> invoking kosmorro command without --latitude and
+--longitude arguments will now only output the Moon phase and,
+eventually, the events for the given date (or today if date not given).</li>
+</ul>
+<h2 id="version-0-3-1-2019-12-01"><a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/compare/v0.3.0...v0.3.1">Version 0.3.1</a> (2019-12-01)</h2>
+<h3 id="bug-fixes-18">Bug Fixes</h3>
+<ul>
+<li><strong>moonphase:</strong> fix the Moon phase prediction (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/d7157466d90c7596a35dce63088b6aacb7c33c3c">d715746</a>)</li>
+</ul>
+<h2 id="version-0-3-0-2019-12-01"><a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/compare/v0.2.3...v0.3.0">Version 0.3.0</a> (2019-12-01)</h2>
+<h3 id="bug-fixes-19">Bug Fixes</h3>
+<ul>
+<li><strong>position:</strong> remove useless altitude argument (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/d079fc7b201c7f5855c05acc80955e3b16c4ef6d">d079fc7</a>)</li>
+<li><strong>terminology:</strong> use the "Object" term (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/e21f6327f4dc7e5a9d46ccd6ca493207064745f8">e21f632</a>)</li>
+</ul>
+<h3 id="features-9">Features</h3>
+<ul>
+<li><strong>moon-phase:</strong> compute more accurate Moon phase (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/6856d456439215c7a63432e76318e231fc17870d">6856d45</a>)</li>
+</ul>
+<h3 id="performance-improvements">Performance Improvements</h3>
+<ul>
+<li><strong>position:</strong> enhance the position performing (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/61536da9df4e742e9f7046fb177ecd09fb711b38">61536da</a>)</li>
+</ul>
+<h3 id="breaking-changes-7">BREAKING CHANGES</h3>
+<ul>
+<li><strong>position:</strong> invoking kosmorro command with the --altitude argument
+will now fail with an "unrecognized arguments" error.</li>
+<li><strong>moon-phase:</strong> JSON format now returns the moon phase as an object
+instead of a string</li>
+</ul>
+<h2 id="version-0-2-3-2019-11-24"><a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/compare/v0.2.2...v0.2.3">Version 0.2.3</a> (2019-11-24)</h2>
+<h3 id="bug-fixes-20">Bug Fixes</h3>
+<ul>
+<li><strong>dumper:</strong> display the right date on output text (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/2511d31c37dc5bbb790ebeabc7c230e8641b1448">2511d31</a>)</li>
+</ul>
+<h2 id="version-0-2-2-2019-11-18"><a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/compare/v0.2.1...v0.2.2">Version 0.2.2</a> (2019-11-18)</h2>
+<h3 id="bug-fixes-21">Bug Fixes</h3>
+<ul>
+<li>set times are now correct (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/82bdc7055b903bcd586e69374ba93f843ae95ceb">82bdc70</a>)</li>
+</ul>
+<h3 id="features-10">Features</h3>
+<ul>
+<li>add argument to get the current version (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/5f74b08d15bbccededfc5a195b6943c408c93d16">5f74b08</a>)</li>
+</ul>
+<h2 id="version-0-2-1-2019-11-17"><a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/compare/v0.2.0...v0.2.1">Version 0.2.1</a> (2019-11-17)</h2>
+<h3 id="bug-fixes-22">Bug Fixes</h3>
+<ul>
+<li>Move version constant to its own file to prevent sgp4 module failing in the AUR (<a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/commit/9a0c9d3ae34c5fa561b5a1b252d39a5ef2a0a4b9">9a0c9d3</a>)</li>
+</ul>
+<h2 id="version-0-2-0-2019-11-17"><a rel="noopener external" target="_blank" href="https://github.com/Deuchnord/kosmorro/compare/v0.1.0...v0.2.0">Version 0.2.0</a> (2019-11-17)</h2>
+<h3 id="added">Added</h3>
+<ul>
+<li>Add JSON output</li>
+<li>Add argument to clear the cache</li>
+</ul>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Update Numpy to v1.17.4</li>
+<li>Update PyLint to v2.4.4</li>
+</ul>
+<h2 id="v0-1-0-2019-11-10">v0.1.0 (2019-11-10)</h2>
+<ul>
+<li>First version</li>
+</ul>
+
+</article>
+                
+
+            </div>
+
+            <footer>
+                <ul class="social" aria-label="Social networks to follow the project">
+                    <li><a target="_blank" href="https://github.com/Kosmorro">
+                        <i class="fa-brands fa-github" title="Follow the project on GitHub" aria-label="GitHub logo"></i>
+                    </a></li>
+                    <li><a target="_blank" href="https://social.deuchnord.fr/@Kosmorro" rel="me">
+                        <i class="fa fa-mastodon" title="Follow the project on Mastodon" aria-label="Mastodon logo"></i>
+                    </a></li>
+                    <li><a target="_blank" href="https://bsky.app/profile/kosmorro.space" rel="me">
+                        <i class="fa-brands fa-bluesky" title="Follow the project on Bluesky" aria-label="Bluesky"></i>
+                    </a></li>
+                    <li><a target="_blank" href="https://matrix.to/#/#kosmorro:matrix.org" rel="me">
+                        <i class="fa fa-matrix-org" title="Discuss the project on Matrix" aria-label="Matrix"></i>
+                    </a></li>
+                </ul>
+                <p class="legal">
+                    Kosmorro is a free software distributed under <a target="_blank" href="https://github.com/Kosmorro/kosmorro/blob/v1.0.1/LICENSE.md">GNU Affero General Public License v3.0</a>.<br />
+
+                    Kosmorro's website by <a href="https://deuchnord.fr">Jérôme Deuchnord</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>
+                </p>
+            </footer>
+
+            <script type="text/javascript" src="/scripts/matomo.js"></script>
+            <script src="https://stats.deuchnord.fr/matomo.js" async defer></script>
+        </div>
+    </body>
+</html>

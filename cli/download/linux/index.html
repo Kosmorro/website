@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+    <head>
+        <meta charset="UTF-8">
+        <title>Download Kosmorro on Linux</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https://stats.deuchnord.fr; img-src 'self'; script-src 'self' https://stats.deuchnord.fr; style-src 'self' 'unsafe-inline'; font-src 'self'; frame-ancestors 'none'; form-action 'self'; base-uri 'self'" />
+        <meta http-equiv="Same-Origin" content="always" />
+        <meta http-equiv="Content-Type-Options" content="nosniff" />
+        <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+        <meta http-equiv="X-Frame-Options" content="DENY" />
+
+
+        <link href="/fa/css/fontawesome.min.css" rel="stylesheet" />
+        <link href="/fa/css/solid.min.css" rel="stylesheet" />
+        <link href="/fa/css/brands.min.css" rel="stylesheet" />
+        <link href="/fark/css/fork-awesome.min.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="/css/normalize.css/normalize.css" />
+        <link rel="stylesheet" href="/base.css" />
+        
+        <meta name="theme-color" content="#000" />
+
+        <meta name="description" content="All the instructions to install Kosmorro on Linux!" />
+        <meta property="og:title" content="Download Kosmorro on Linux" />
+        <meta property="og:description" content="All the instructions to install Kosmorro on Linux!" />
+        <meta property="og:url" content="https://kosmorro.space/cli/download/linux/" />
+        <meta property="og:site_name" content="Kosmorro" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://kosmorro.space/img/kosmorro-open-graph.jpg" />
+
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="body">
+                
+                    <nav><a href="/" class="logo">
+    <img class="normal" src="/img/svg/kosmorro/kosmorro-logo.svg" alt="Kosmorro" />
+    <img class="mobile" src="/img/svg/kosmorro/kosmorro-icon.svg" alt="Kosmorro" />
+</a>
+<ul>
+    <li><a href="/lib">Library</a></li>
+    <li><a href="/support">Support</a></li>
+    <li><a href="/contribute">Contribute</a></li>
+</ul>          
+</nav>
+                
+                
+
+
+<article>
+<h1 id="download-kosmorro-on-linux">Download Kosmorro on Linux</h1>
+<h2 id="debian-ubuntu-linux-mint">Debian, Ubuntu, Linux Mint...</h2>
+<p>Kosmorro is available on our own repository. To install it, you will first need to add it to your APT sources:</p>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="shellscript"><span class="giallo-l"><span style="color: #6A737D;"># First, add Kosmorro&#39;s repositories to your APT sources:</span></span>
+<span class="giallo-l"><span style="color: #79B8FF;">echo</span><span style="color: #9ECBFF;"> &quot;deb [arch=all] https://pkg.kosmorro.space/apt main main&quot;</span><span style="color: #F97583;"> |</span><span style="color: #B392F0;"> sudo</span><span style="color: #9ECBFF;"> tee /etc/apt/sources.list.d/kosmorro.list</span></span>
+<span class="giallo-l"><span style="color: #6A737D;"># Then, add the repository public key:</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">curl</span><span style="color: #79B8FF;"> -fsSL</span><span style="color: #9ECBFF;"> https://kosmorro.space/apt.gpg</span><span style="color: #F97583;"> |</span><span style="color: #B392F0;"> gpg</span><span style="color: #79B8FF;"> --dearmor</span><span style="color: #F97583;"> |</span><span style="color: #B392F0;"> sudo</span><span style="color: #9ECBFF;"> tee /etc/apt/trusted.gpg.d/kosmorro.gpg</span></span></code></pre>
+<p>Finally, update your cache and install Kosmorro with your favorite package manager:</p>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="shellscript"><span class="giallo-l"><span style="color: #B392F0;">sudo</span><span style="color: #9ECBFF;"> apt update</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">sudo</span><span style="color: #9ECBFF;"> apt install kosmorro</span></span></code></pre><h2 id="arch-linux">Arch Linux</h2>
+<p>Kosmorro is available <a rel="noopener external" target="_blank" href="https://aur.archlinux.org/packages/kosmorro">on the AUR</a>! To install it, use your favorite AUR helper:</p>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="shellscript"><span class="giallo-l"><span style="color: #B392F0;">yay</span><span style="color: #9ECBFF;"> kosmorro</span></span></code></pre><h2 id="other-linux-distributions">Other Linux distributions</h2>
+<p>For other distributions, the recommended way to install Kosmorro is using <a rel="noopener external" target="_blank" href="https://pipx.pypa.io"><code>pipx</code></a>:</p>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="shellscript"><span class="giallo-l"><span style="color: #B392F0;">pipx</span><span style="color: #9ECBFF;"> install kosmorro</span></span></code></pre>
+
+<h2 id="using-kosmorro">Using Kosmorro</h2>
+<p>The simplest command you can run is <code>kosmorro</code>.
+If you need help in using Kosmorro, you have different options depending on your preference:</p>
+<ul>
+<li>Typing <code>kosmorro --help</code> gives you the complete synopsis of the program, with its options</li>
+<li>You might also want to <a href="https://kosmorro.space/cli/manpage/">read the manpage</a>, available with <code>man kosmorro</code></li>
+<li>You can also read the <a rel="noopener external" target="_blank" href="https://tldr.inbrowser.app/pages/common/kosmorro"><code>tldr</code> manual</a> with <code>tldr kosmorro</code></li>
+</ul>
+<h3 id="using-the-pdf-generator">Using the PDF generator</h3>
+<p>If you want to generate a PDF file, you might want to look at its <a href="https://kosmorro.space/cli/generate-pdf/">dedicated documentation</a> too.</p>
+
+</article>
+                
+
+            </div>
+
+            <footer>
+                <ul class="social" aria-label="Social networks to follow the project">
+                    <li><a target="_blank" href="https://github.com/Kosmorro">
+                        <i class="fa-brands fa-github" title="Follow the project on GitHub" aria-label="GitHub logo"></i>
+                    </a></li>
+                    <li><a target="_blank" href="https://social.deuchnord.fr/@Kosmorro" rel="me">
+                        <i class="fa fa-mastodon" title="Follow the project on Mastodon" aria-label="Mastodon logo"></i>
+                    </a></li>
+                    <li><a target="_blank" href="https://bsky.app/profile/kosmorro.space" rel="me">
+                        <i class="fa-brands fa-bluesky" title="Follow the project on Bluesky" aria-label="Bluesky"></i>
+                    </a></li>
+                    <li><a target="_blank" href="https://matrix.to/#/#kosmorro:matrix.org" rel="me">
+                        <i class="fa fa-matrix-org" title="Discuss the project on Matrix" aria-label="Matrix"></i>
+                    </a></li>
+                </ul>
+                <p class="legal">
+                    Kosmorro is a free software distributed under <a target="_blank" href="https://github.com/Kosmorro/kosmorro/blob/v1.0.1/LICENSE.md">GNU Affero General Public License v3.0</a>.<br />
+
+                    Kosmorro's website by <a href="https://deuchnord.fr">Jérôme Deuchnord</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>
+                </p>
+            </footer>
+
+            <script type="text/javascript" src="/scripts/matomo.js"></script>
+            <script src="https://stats.deuchnord.fr/matomo.js" async defer></script>
+        </div>
+    </body>
+</html>
