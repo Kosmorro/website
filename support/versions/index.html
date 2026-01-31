@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+    <head>
+        <meta charset="UTF-8">
+        <title>Versions support</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https://stats.deuchnord.fr; img-src 'self'; script-src 'self' https://stats.deuchnord.fr; style-src 'self' 'unsafe-inline'; font-src 'self'; frame-ancestors 'none'; form-action 'self'; base-uri 'self'" />
+        <meta http-equiv="Same-Origin" content="always" />
+        <meta http-equiv="Content-Type-Options" content="nosniff" />
+        <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+        <meta http-equiv="X-Frame-Options" content="DENY" />
+
+
+        <link href="/fa/css/fontawesome.min.css" rel="stylesheet" />
+        <link href="/fa/css/solid.min.css" rel="stylesheet" />
+        <link href="/fa/css/brands.min.css" rel="stylesheet" />
+        <link href="/fark/css/fork-awesome.min.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="/css/normalize.css/normalize.css" />
+        <link rel="stylesheet" href="/base.css" />
+        
+        <meta name="theme-color" content="#000" />
+
+        <meta name="description" content="All you need to know about how the versions of Kosmorro and Kosmorrolib are supported." />
+        <meta property="og:title" content="Versions support" />
+        <meta property="og:description" content="All you need to know about how the versions of Kosmorro and Kosmorrolib are supported." />
+        <meta property="og:url" content="https://kosmorro.space/support/versions/" />
+        <meta property="og:site_name" content="Kosmorro" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://kosmorro.space/img/kosmorro-open-graph.jpg" />
+
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="body">
+                
+                    <nav><a href="/" class="logo">
+    <img class="normal" src="/img/svg/kosmorro/kosmorro-logo.svg" alt="Kosmorro" />
+    <img class="mobile" src="/img/svg/kosmorro/kosmorro-icon.svg" alt="Kosmorro" />
+</a>
+<ul>
+    <li><a href="/lib">Library</a></li>
+    <li><a href="/support">Support</a></li>
+    <li><a href="/contribute">Contribute</a></li>
+</ul>          
+</nav>
+                
+                
+
+
+
+<article>
+<h1 id="version-support">Version support</h1>
+<p>Because Kosmorro and Kosmorrolib are two specific projects that don't have the same goal, they don't benefit of the same kind of version support.</p>
+<p>This page gives all the details you need on how are supported the versions of both projects.</p>
+<h2 id="kosmorro">Kosmorro <small class="last_version"><strong>Last version:</strong> 1.0.1</small></h2>
+<p>For Kosmorro, the command line program, only the last version is supported.</p>
+<p>If you are not sure of what version of Kosmorro you are running, invoke <code>kosmorro --version</code>, and upgrade if needed.</p>
+<h2 id="kosmorrolib">Kosmorrolib <small class="last_version"><strong>Last version:</strong> 1.0.12</small></h2>
+<p>For Kosmorrolib, the library that actually makes the calculations, two versions are supported at the same time:</p>
+<ul>
+<li>the last version is actively supported and receives fixes for both bugs and security issues,</li>
+<li>the previous version receives fixes for security issues only.</li>
+</ul>
+<aside class="center">
+
+
+    
+
+    
+        <div class="version-support supported">
+            <h4>
+                Version 1.0
+                
+                    <small class="badge" title="Version 1.0 is the most recent release.&#10;Use it in priority.">Recommended</small>
+                
+            </h4>
+            <p>
+                <span class="release-date">Released on 2021-11-01.</span>
+                
+                <span class="support-status">
+                    Actively supported
+                </span>
+                
+            </p>
+
+        </div>
+        
+        
+    
+
+    
+        <div class="version-support supported">
+            <h4>
+                Version 0.11
+                
+            </h4>
+            <p>
+                <span class="release-date">Released on 2021-04-18.</span>
+                
+                <span class="support-status">
+                    Security fixes only
+                </span>
+                
+            </p>
+
+        </div>
+        
+        
+    
+
+    
+        <div class="version-support">
+            <h4>
+                Version 0.10
+                
+            </h4>
+            <p>
+                <span class="release-date">Released on 2021-04-05.</span>
+                
+                <span class="support-status">
+                    End Of Life since 2021-11-01.
+                </span>
+                
+            </p>
+
+        </div>
+        
+        
+    
+
+</aside>
+<h3 id="backward-compatibility-promise">Backward Compatibility Promise</h3>
+<p>Kosmorrolib versioning follows the <a rel="noopener external" target="_blank" href="https://semver.org/">Semantic Versioning 2.0.0</a> specification, so each minor version keeps backward compatibility (BC) of the features. Any BC-break in a minor version <em>must</em> be treated as a bug. See <a href="https://kosmorro.space/support/">the support</a> page for more information about how to report it.</p>
+<p>When it is possible, any BC break that can be anticipated in the next major release will be preceded by a deprecation in a minor version, that are listed in the <a href="https://kosmorro.space/lib/changelog/">Changelog</a> for each version.</p>
+
+</article>
+                
+
+            </div>
+
+            <footer>
+                <ul class="social" aria-label="Social networks to follow the project">
+                    <li><a target="_blank" href="https://github.com/Kosmorro">
+                        <i class="fa-brands fa-github" title="Follow the project on GitHub" aria-label="GitHub logo"></i>
+                    </a></li>
+                    <li><a target="_blank" href="https://social.deuchnord.fr/@Kosmorro" rel="me">
+                        <i class="fa fa-mastodon" title="Follow the project on Mastodon" aria-label="Mastodon logo"></i>
+                    </a></li>
+                    <li><a target="_blank" href="https://bsky.app/profile/kosmorro.space" rel="me">
+                        <i class="fa-brands fa-bluesky" title="Follow the project on Bluesky" aria-label="Bluesky"></i>
+                    </a></li>
+                    <li><a target="_blank" href="https://matrix.to/#/#kosmorro:matrix.org" rel="me">
+                        <i class="fa fa-matrix-org" title="Discuss the project on Matrix" aria-label="Matrix"></i>
+                    </a></li>
+                </ul>
+                <p class="legal">
+                    Kosmorro is a free software distributed under <a target="_blank" href="https://github.com/Kosmorro/kosmorro/blob/v1.0.1/LICENSE.md">GNU Affero General Public License v3.0</a>.<br />
+
+                    Kosmorro's website by <a href="https://deuchnord.fr">Jérôme Deuchnord</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>
+                </p>
+            </footer>
+
+            <script type="text/javascript" src="/scripts/matomo.js"></script>
+            <script src="https://stats.deuchnord.fr/matomo.js" async defer></script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+    <head>
+        <meta charset="UTF-8">
+        <title>How to contribute to Kosmorro</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https://stats.deuchnord.fr; img-src 'self'; script-src 'self' https://stats.deuchnord.fr; style-src 'self' 'unsafe-inline'; font-src 'self'; frame-ancestors 'none'; form-action 'self'; base-uri 'self'" />
+        <meta http-equiv="Same-Origin" content="always" />
+        <meta http-equiv="Content-Type-Options" content="nosniff" />
+        <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+        <meta http-equiv="X-Frame-Options" content="DENY" />
+
+
+        <link href="/fa/css/fontawesome.min.css" rel="stylesheet" />
+        <link href="/fa/css/solid.min.css" rel="stylesheet" />
+        <link href="/fa/css/brands.min.css" rel="stylesheet" />
+        <link href="/fark/css/fork-awesome.min.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="/css/normalize.css/normalize.css" />
+        <link rel="stylesheet" href="/base.css" />
+        
+        <meta name="theme-color" content="#000" />
+
+        <meta name="description" content="You love Kosmorro and want to help to its development? Discover how!" />
+        <meta property="og:title" content="How to contribute to Kosmorro" />
+        <meta property="og:description" content="You love Kosmorro and want to help to its development? Discover how!" />
+        <meta property="og:url" content="https://kosmorro.space/contribute/" />
+        <meta property="og:site_name" content="Kosmorro" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://kosmorro.space/img/kosmorro-open-graph.jpg" />
+
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="body">
+                
+                    <nav><a href="/" class="logo">
+    <img class="normal" src="/img/svg/kosmorro/kosmorro-logo.svg" alt="Kosmorro" />
+    <img class="mobile" src="/img/svg/kosmorro/kosmorro-icon.svg" alt="Kosmorro" />
+</a>
+<ul>
+    <li><a href="/lib">Library</a></li>
+    <li><a href="/support">Support</a></li>
+    <li><a href="/contribute">Contribute</a></li>
+</ul>          
+</nav>
+                
+                
+
+
+
+<article>
+<h1 id="how-to-contribute">How to contribute</h1>
+<p>If you are reading this, then you are probably looking for a way to contribute to Kosmorro or Kosmorrolib. Thank you!
+There are multiple ways to contribute that can match with your possibilities.</p>
+<h2 id="opening-issues">Opening issues</h2>
+<h3 id="reporting-bugs">Reporting bugs</h3>
+<p>If you find a bug, please check it is not already reported in the <em>Issues</em> tab on GitHub.
+If it is not, create a bug report and fill in the form. Feel free to give as much information as possible, as it will make the bug easier to fix.</p>
+<ul>
+<li>Kosmorro: <a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/issues/new?template=bug_report.yml">click here</a></li>
+<li>Kosmorrolib: <a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/lib/issues/new?template=bug_report.yml">click here</a></li>
+</ul>
+<h3 id="suggest-a-new-feature">Suggest a new feature</h3>
+<p>Have an idea of feature you think would be nice on Kosmorro? Time to suggest it!
+First, please check someone didn't suggest your next revolution in the <em>Issues</em> tab. If it's not, create a feature request and fill in the form.</p>
+<ul>
+<li>Kosmorro: <a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro/issues/new?template=feature_request.md">click here</a></li>
+<li>Kosmorrolib: propose a <a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/lib/issues/new?template=feature_request.md">feature request</a> or an <a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/lib/issues/new?template=event-type-proposal.md">event type</a></li>
+</ul>
+<h2 id="translating">Translating</h2>
+<p>If you speak another language than English, another nice way to enhance Kosmorro is to translate its messages. The recommended way to begin translating Kosmorro is to <a rel="noopener external" target="_blank" href="https://hosted.weblate.org/engage/kosmorro/">join the Weblate project</a>.</p>
+<h2 id="writing-code">Writing code</h2>
+<p>First, if you are fixing an opened issue, check that nobody is already working on it — if someone seems to be but their Pull Request seems stuck, please ask them first if you can continue the development. If you retake the code they produced, <strong>don't change the author of the commits</strong>.</p>
+<p>Before writing the code, first create a fork of the repository and clone it. You may also want to add the original repository (<a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/kosmorro"><code>Kosmorro/kosmorro</code></a> or <a rel="noopener external" target="_blank" href="https://github.com/Kosmorro/lib"><code>Kosmorro/lib</code></a>), so you can update your fork with the last upstream commits.</p>
+<p>Then create a new branch and start coding. Finally, commit and push, then open a pull request on the original repository. If your work is not complete, feel free to open it as Draft, then mark it as ready for review when you're done.</p>
+<h3 id="choosing-the-right-target-branch">Choosing the right target branch</h3>
+<p>When you create your PR, select the right source and target branch:</p>
+<ul>
+<li>If you are fixing a bug or optimizing something, then your base branch is <code>master</code>.</li>
+<li>If you are doing anything else, then your base branch is <code>features</code>.</li>
+</ul>
+<p>This allows to make easier to publish patch releases, which have a higher priority than the minor releases.</p>
+<h3 id="dealing-with-the-translations">Dealing with the translations</h3>
+<p>On Kosmorro, the messages file contains all the messages Kosmorro can display, in order to make them translatable. When you change code, you may change also the messages displayed by the software.</p>
+<p>When you add a new string that will be displayed to the end user, please pass it to the <code>_()</code> function made available in the <code>kosmorro.i18n</code> package:</p>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="python"><span class="giallo-l"><span style="color: #6A737D;"># Don&#39;t:</span></span>
+<span class="giallo-l"><span style="color: #79B8FF;">print</span><span>(</span><span style="color: #F97583;">f</span><span style="color: #9ECBFF;">&#39;</span><span style="color: #79B8FF;">{</span><span>object1</span><span style="color: #79B8FF;">}</span><span style="color: #9ECBFF;"> and </span><span style="color: #79B8FF;">{</span><span>object2</span><span style="color: #79B8FF;">}</span><span style="color: #9ECBFF;"> are in conjunction&#39;</span><span>)</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #6A737D;"># Do:</span></span>
+<span class="giallo-l"><span style="color: #F97583;">from</span><span> kosmorro.i18n</span><span style="color: #F97583;"> import</span><span> _</span></span>
+<span class="giallo-l"><span style="color: #79B8FF;">print</span><span>(_(</span><span style="color: #9ECBFF;">&#39;</span><span style="color: #79B8FF;">%s</span><span style="color: #9ECBFF;"> and </span><span style="color: #79B8FF;">%s</span><span style="color: #9ECBFF;"> are in conjunction&#39;</span><span>)</span><span style="color: #F97583;"> %</span><span> (object1, object2))</span></span></code></pre>
+<p>This will allow Python's internationalization tool to translate the string in any available language.</p>
+<p>Once you have done your work, please remember to tell <a rel="noopener external" target="_blank" href="http://babel.pocoo.org">Babel</a> to extract the new strings:</p>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="shellscript"><span class="giallo-l"><span style="color: #B392F0;">make</span><span style="color: #9ECBFF;"> messages</span></span></code></pre>
+<p>Note that if you forget to update the messages file, the CI will fail.</p>
+<h3 id="matching-the-coding-standards">Matching the coding standards</h3>
+<p>The source code follows the major coding standards of Python (PEPs).
+Before marking your Pull Request as ready for review, don't forget to check that the code respects the coding standards with Black:</p>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="shellscript"><span class="giallo-l"><span style="color: #B392F0;">make</span><span style="color: #9ECBFF;"> black</span></span></code></pre><h3 id="testing-the-code">Testing the code</h3>
+<h4 id="kosmorro">Kosmorro</h4>
+<p>On Kosmorro, the tests are located in the <code>/tests</code> folder.</p>
+<p>Their principle is pretty simple:</p>
+<ol>
+<li>First, we run a Kosmorro command as we would in command line application. We use the <a rel="noopener external" target="_blank" href="https://pypi.org/project/aurornis/">Aurornis</a> package to do this.</li>
+<li>Then, we test the return of the command against what we expected. We use <a rel="noopener external" target="_blank" href="https://pypi.org/project/pytest/">PyTest</a> to do this.</li>
+</ol>
+<p>To run the tests, invoke the following command:</p>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="shellscript"><span class="giallo-l"><span style="color: #B392F0;">make</span><span style="color: #9ECBFF;"> tests</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #6A737D;"># Or, if you have TeXLive installed on your machine (Linux only):</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">make</span><span style="color: #9ECBFF;"> TEXLIVE_INSTALLED=</span><span style="color: #79B8FF;">1</span><span style="color: #9ECBFF;"> tests</span></span></code></pre><h4 id="kosmorrolib">Kosmorrolib</h4>
+<p>On Kosmorrolib, we use doctests to check that the code works as expected. This allows to make sure that the code works and, at the same time, ensure the code documentation is up to date.</p>
+<p>See <a rel="noopener external" target="_blank" href="https://docs.python.org/3/library/doctest.html">Python official documentation</a> for more information.</p>
+<h3 id="commiting">Commiting</h3>
+<p>The commit messages of this project follow the <a rel="noopener external" target="_blank" href="https://www.conventionalcommits.org/en/v1.0.0/">Conventional Commits Specification</a>: basically, when you commit your changes, please prefix them with the following:</p>
+<ul>
+<li><strong><code>fix: </code></strong> if your changes fix a bug;</li>
+<li><strong><code>feat: </code></strong> if your changes add a new feature.</li>
+</ul>
+<p>The message of your commit must start with a lowercase.</p>
+<p>Once your PR is ready to review, please squash your commits so it contains only one.</p>
+<p>The commit messages are then used to generate the changelog using <a rel="noopener external" target="_blank" href="https://github.com/conventional-changelog/conventional-changelog"><code>conventional-changelog</code></a>, so make sure that the commit message is clear.</p>
+<h2 id="licensing-and-copyright-attribution">Licensing and Copyright Attribution</h2>
+<p>When you open a Pull Request to the project, you agree to license your code under the <a rel="noopener external" target="_blank" href="https://www.gnu.org/licenses/agpl-3.0.html">GNU Affero General Public License version 3</a>.</p>
+
+</article>
+                
+
+            </div>
+
+            <footer>
+                <ul class="social" aria-label="Social networks to follow the project">
+                    <li><a target="_blank" href="https://github.com/Kosmorro">
+                        <i class="fa-brands fa-github" title="Follow the project on GitHub" aria-label="GitHub logo"></i>
+                    </a></li>
+                    <li><a target="_blank" href="https://social.deuchnord.fr/@Kosmorro" rel="me">
+                        <i class="fa fa-mastodon" title="Follow the project on Mastodon" aria-label="Mastodon logo"></i>
+                    </a></li>
+                    <li><a target="_blank" href="https://bsky.app/profile/kosmorro.space" rel="me">
+                        <i class="fa-brands fa-bluesky" title="Follow the project on Bluesky" aria-label="Bluesky"></i>
+                    </a></li>
+                    <li><a target="_blank" href="https://matrix.to/#/#kosmorro:matrix.org" rel="me">
+                        <i class="fa fa-matrix-org" title="Discuss the project on Matrix" aria-label="Matrix"></i>
+                    </a></li>
+                </ul>
+                <p class="legal">
+                    Kosmorro is a free software distributed under <a target="_blank" href="https://github.com/Kosmorro/kosmorro/blob/v1.0.1/LICENSE.md">GNU Affero General Public License v3.0</a>.<br />
+
+                    Kosmorro's website by <a href="https://deuchnord.fr">Jérôme Deuchnord</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>
+                </p>
+            </footer>
+
+            <script type="text/javascript" src="/scripts/matomo.js"></script>
+            <script src="https://stats.deuchnord.fr/matomo.js" async defer></script>
+        </div>
+    </body>
+</html>
