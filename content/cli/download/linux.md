@@ -25,7 +25,7 @@ sudo apt update
 sudo apt install kosmorro
 ```
 
-## Arch Linux
+## Arch Linux [![Badge reporting the version of Kosmorro on AUR](https://repology.org/badge/version-for-repo/aur/kosmorro.svg)](https://repology.org/project/kosmorro/versions)
 
 Kosmorro is available [on the AUR](https://aur.archlinux.org/packages/kosmorro)! To install it, use your favorite AUR helper:
 
