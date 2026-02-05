@@ -1,7 +1,3 @@
-User-agent: *
-Disallow: /img/
-
-
 User-agent: AddSearchBot
 User-agent: AI2Bot
 User-agent: AI2Bot-DeepResearchEval
