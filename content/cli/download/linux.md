@@ -33,6 +33,21 @@ Kosmorro is available [on the AUR](https://aur.archlinux.org/packages/kosmorro)!
 yay kosmorro
 ```
 
+## Fedora
+
+Kosmorro is available [on COPR](https://copr.fedorainfracloud.org/coprs/deuchnord/kosmorro/).
+To install it, you will first need to add the repository to your sources:
+
+```bash
+sudo dnf copr enable deuchnord/kosmorro
+```
+
+Then you can install Kosmorro with your package manager:
+
+```bash
+sudo dnf install kosmorro
+```
+
 ## Other Linux distributions
 
 For other distributions, the recommended way to install Kosmorro is using [`pipx`](https://pipx.pypa.io):
