@@ -18,11 +18,10 @@ See [this page](@/support/versions.md) for more information.
 
 ### On GitHub
 
-If you have an account on GitHub, feel free to ask your questions in the _Discussions_ tab of the project.
+If you have an account on GitHub, feel free to ask your questions in the _Discussions_ tab of the organization.
 
 <div class="center">
-    <a href="https://github.com/Kosmorro/kosmorro/discussions" target="_blank" class="button invite gh-logo">Discuss on Kosmorro</a>
-    <a href="https://github.com/Kosmorro/kosmorro/discussions" target="_blank" class="button invite gh-logo">Discuss on Kosmorrolib</a>
+    <a href="https://github.com/orgs/Kosmorro/discussions" target="_blank" class="button invite gh-logo">Discuss on GitHub</a>
 </div>
 
 ### On Matrix
