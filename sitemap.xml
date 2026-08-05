@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;cli&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;cli&#x2F;changelog&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;cli&#x2F;download&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;cli&#x2F;download&#x2F;freebsd&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;cli&#x2F;download&#x2F;linux&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;cli&#x2F;download&#x2F;macos&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;cli&#x2F;download&#x2F;sources&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;cli&#x2F;download&#x2F;windows&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;cli&#x2F;generate-pdf&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;cli&#x2F;manpage&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;contribute&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;changelog&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;0.11&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;0.11&#x2F;enums&#x2F;eventtype&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;0.11&#x2F;enums&#x2F;moonphasetype&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;0.11&#x2F;enums&#x2F;objectidentifier&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;0.11&#x2F;enums&#x2F;objecttype&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;0.11&#x2F;functions&#x2F;get-ephemerides&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;0.11&#x2F;functions&#x2F;get-events&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;0.11&#x2F;functions&#x2F;get-moon-phase&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;0.11&#x2F;model&#x2F;asterephemerides&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;0.11&#x2F;model&#x2F;event&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;0.11&#x2F;model&#x2F;moonphase&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;0.11&#x2F;model&#x2F;object&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;0.11&#x2F;model&#x2F;position&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.0&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.0&#x2F;enums&#x2F;eventtype&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.0&#x2F;enums&#x2F;lunareclipsetype&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.0&#x2F;enums&#x2F;moonphasetype&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.0&#x2F;enums&#x2F;objectidentifier&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.0&#x2F;enums&#x2F;objecttype&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.0&#x2F;enums&#x2F;seasontype&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.0&#x2F;functions&#x2F;get-ephemerides&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.0&#x2F;functions&#x2F;get-events&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.0&#x2F;functions&#x2F;get-moon-phase&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.0&#x2F;model&#x2F;asterephemerides&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.0&#x2F;model&#x2F;event&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.0&#x2F;model&#x2F;moonphase&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.0&#x2F;model&#x2F;object&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.0&#x2F;model&#x2F;position&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.1&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.1&#x2F;enums&#x2F;eventtype&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.1&#x2F;enums&#x2F;lunareclipsetype&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.1&#x2F;enums&#x2F;moonphasetype&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.1&#x2F;enums&#x2F;objectidentifier&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.1&#x2F;enums&#x2F;objecttype&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.1&#x2F;enums&#x2F;seasontype&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.1&#x2F;functions&#x2F;get-ephemerides&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.1&#x2F;functions&#x2F;get-events&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.1&#x2F;functions&#x2F;get-moon-phase&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.1&#x2F;functions&#x2F;search-events&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.1&#x2F;model&#x2F;asterephemerides&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.1&#x2F;model&#x2F;event&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.1&#x2F;model&#x2F;moonphase&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.1&#x2F;model&#x2F;object&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;1.1&#x2F;model&#x2F;position&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;lib&#x2F;doc&#x2F;current&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;support&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>https:&#x2F;&#x2F;kosmorro.space&#x2F;support&#x2F;versions&#x2F;</loc>
+      <changefreq>monthly</changefreq>
+   </url>
+
+</urlset> 
